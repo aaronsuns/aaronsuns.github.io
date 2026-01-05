@@ -50,9 +50,26 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all experience items and sections
+// Handle profile image fallback
+const profileImage = document.getElementById('profileImage');
+if (profileImage) {
+    profileImage.addEventListener('error', function() {
+        // If image fails to load, hide it
+        this.style.display = 'none';
+        // Adjust profile section layout if image is missing
+        const profileSection = document.querySelector('.profile-section');
+        if (profileSection) {
+            const profileText = profileSection.querySelector('.profile-text');
+            if (profileText) {
+                profileText.style.textAlign = 'center';
+            }
+        }
+    });
+}
+
+// Observe all experience items, project items, and sections
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.experience-item, .skill-category, .education-item, .contact-info');
+    const animatedElements = document.querySelectorAll('.experience-item, .project-item, .skill-category, .education-item, .contact-info');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';

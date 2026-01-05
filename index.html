@@ -14,13 +14,30 @@
     <div class="container">
         <header>
             <div class="header-content">
-                <h1>Aaron YingCai Sun</h1>
-                <p class="subtitle">Senior Software Engineer</p>
-                <p class="location">Stockholm, Sweden</p>
+                <div class="profile-section">
+                    <img src="profile.jpg" alt="Aaron YingCai Sun" class="profile-image" id="profileImage">
+                    <div class="profile-text">
+                        <h1>Aaron YingCai Sun</h1>
+                        <p class="subtitle">Senior Software Engineer at Klarna</p>
+                        <p class="location">Stockholm, Sweden</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/aaronsuns" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aaron-yingcai-sun-6658b83" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="mailto:aaronsuns@gmail.com" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                </div>
             </div>
             <nav class="main-nav">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
@@ -141,6 +158,96 @@
                     <p class="location-text">Stockholm, Sweden | Beijing, China | Shanghai, China</p>
                     <div class="experience-content">
                         <p>Various roles including function test of Core IMS, CSCF (SIP server) and Media Resource Server MRF, team leadership of IPWorks system test (6 team members), and block designer/function tester of AXE core network for CDMA2000.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>Vizrt MAM Development</h3>
+                        <span class="project-period">December 2018 - July 2024</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed Media Asset Management system, a modular and distributed system. Maintained system test suite with Python. Developed plugins for Variant customers.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> Golang, Perl, Python, C#, C, C++, Kubernetes, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>Connode Solution Test</h3>
+                        <span class="project-period">June 2012 - December 2018</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Test environment setup, function test, and system test for IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test automation, CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Agile way of working. Setup continuous integration for server and node side, created/maintained smoke test and daily regression test scripts.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>RBS Platform System Test</h3>
+                        <span class="project-period">May 2011 - June 2012</span>
+                    </div>
+                    <div class="project-content">
+                        <p>System test of RBS (Radio Base Station) platform. Agile/Scrum way of working. Mainly used Erlang/OTP/CT for test automation. All test-cases written in Erlang with Common Test framework. Also used Perl/Linux shell scripts as helpers. Performed integration and system tests for different types of RBS platform, for WCDMA/LTE, multi-standard RBS etc.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> Erlang, OTP, CT, Perl, Linux Shell</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>CSCF Test Environment Setup and Test Automation</h3>
+                        <span class="project-period">May 2008 - May 2011</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Setup and maintained test environment for Core IMS, CSCF (SIP server). Used Perl and Linux shell scripts to create convenient work environment for testers. Ensured all servers were in healthy condition. Involved with MAIA sub-project - simulation of telecom server platform (TSP), responsible for integration to R&D development/test environment using VMware/Virtualbox, Soft-IP-routing (ospfd, zebra, openVPN), serving 20+ developers/testers.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> Perl, Linux Shell, VMware, Virtualbox, ClearCase, Subversion</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>CSCF Test Automation and Regression Test</h3>
+                        <span class="project-period">July 2007 - May 2008</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Troubleshooting failed test-cases, corrected errors in test-cases, wrote trouble reports if faults were found in CSCF. Test-case automation and maintained daily runs. Ensured all legacy functions were not broken when new CSCF releases were delivered. Managed around 6000 test-cases running every day.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>IPworks Development</h3>
+                        <span class="project-period">January 2007 - August 2007</span>
+                    </div>
+                    <div class="project-content">
+                        <p>IPworks mainly works as DNS/DHCP servers. Supports internal/external DNS, ACL, A/SRV/ENUM records, Dynamic DNS. Also has functions for ERH (External Resource handler) and SS7. MySQL cluster used for back-end data management. One of the key components of the whole IMS architecture. Agile/Scrum way of working.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> MySQL Cluster, DNS, DHCP</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>CSCF/MRF Development</h3>
+                        <span class="project-period">January 2006 - December 2006</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed test-cases in Spirent (Protocol testing tool), function test of CSCF/MRF, working with protocols like SIP, diameter, LDAP, TCP/UDP etc, IP networking. Tested several features including system counter accuracy, Lawful Intercept, Number Portability, Third party registration etc.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> Spirent, SIP, Diameter, LDAP, TCP/UDP</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>CDMA 2000 Development</h3>
+                        <span class="project-period">June 2003 - December 2005</span>
+                    </div>
+                    <div class="project-content">
+                        <p>AXE platform block design and function test, using Ericsson PLEX-C/ASA assembler language. FOA (Install First Official Application) in customer site.</p>
+                        <p class="tech-stack"><strong>Technologies:</strong> PLEX-C, ASA Assembler</p>
                     </div>
                 </div>
             </section>
