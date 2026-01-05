@@ -95,7 +95,9 @@ function calculateDuration(period) {
     const years = endDate.getFullYear() - startDate.getFullYear();
     const months = endDate.getMonth() - startDate.getMonth();
     
-    let totalMonths = years * 12 + months;
+    // Add 1 month to include both start and end months
+    // e.g., August to October = Aug, Sep, Oct = 3 months
+    let totalMonths = years * 12 + months + 1;
     if (totalMonths < 0) totalMonths = 0;
     
     const yrs = Math.floor(totalMonths / 12);
@@ -223,7 +225,7 @@ function renderExperience() {
         // Render each position
         positions.forEach(exp => {
             const duration = calculateDuration(exp.period);
-            const periodDisplay = duration ? `${escapeHtml(exp.period)} · ${duration}` : escapeHtml(exp.period);
+            const periodDisplay = duration ? `${escapeHtml(exp.period)} <span class="duration-separator">·</span> ${duration}` : escapeHtml(exp.period);
             
             const companyDisplay = positions.length === 1 
                 ? (exp.companyUrl 

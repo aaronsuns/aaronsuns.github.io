@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
 // Add fade-in animation on scroll
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -46,6 +46,8 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
+            // Unobserve after it becomes visible to prevent issues
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
@@ -67,15 +69,47 @@ if (profileImage) {
     });
 }
 
+// Check if element is visible in viewport (any part of it)
+function isElementVisible(element) {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // Check if any part of the element is visible
+    return (
+        rect.top < windowHeight &&
+        rect.bottom > 0 &&
+        rect.left < windowWidth &&
+        rect.right > 0
+    );
+}
+
 // Observe all experience items, project items, and sections
 // This will be called after content is rendered
 window.setupAnimations = function() {
     const animatedElements = document.querySelectorAll('.experience-item, .project-item, .skill-category, .education-item, .contact-info');
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+    
+    // Use requestAnimationFrame to ensure DOM is fully rendered
+    requestAnimationFrame(() => {
+        animatedElements.forEach(el => {
+            // Always set transition first
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            
+            // Check if element is already visible in viewport
+            const rect = el.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+            
+            if (isVisible) {
+                // If already visible, make it visible immediately and don't observe
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            } else {
+                // If not visible, set up for animation and observe
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                observer.observe(el);
+            }
+        });
     });
 };
 
