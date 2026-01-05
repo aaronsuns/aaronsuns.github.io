@@ -21,6 +21,7 @@
     {
       "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
       "company": "Klarna",
+      "companyUrl": "https://www.klarna.com/",
       "period": "October 2024 - Present",
       "location": "Stockholm, Sweden",
       "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud is part of Klarna Engineering Platform, providing a common, stable platform for Klarna services.",
@@ -37,6 +38,7 @@
     {
       "title": "Senior Software Engineer",
       "company": "Telness Tech",
+      "companyUrl": "https://telnesstech.com/",
       "period": "August 2024 - October 2024",
       "location": "Stockholm, Sweden",
       "description": "Golang developer at payment team. The automated digital telco enabler."
@@ -44,6 +46,7 @@
     {
       "title": "Senior Software Engineer",
       "company": "Vizrt",
+      "companyUrl": "https://www.vizrt.com/",
       "period": "December 2018 - July 2024",
       "location": "Stockholm, Sweden",
       "bullets": [
@@ -56,6 +59,7 @@
     {
       "title": "QA & Release Manager",
       "company": "Connode AB",
+      "companyUrl": "https://cyanconnode.com/",
       "period": "August 2012 - December 2018",
       "location": "Stockholm, Sweden",
       "description": "System test/function test and release management of an IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test plan/test execution/test automation/CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Development operation and live operation, support for product roll out and troubleshooting."
@@ -63,6 +67,7 @@
     {
       "title": "System Tester",
       "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
       "period": "June 2011 - August 2012",
       "location": "Stockholm, Sweden",
       "description": "System test of RBS (Radio Base Station) platform. Write/Execute test-case with Erlang CT/OTP. System test automation. Performance/Capacity/Robustness/Reliability test."
@@ -70,6 +75,7 @@
     {
       "title": "TCM & Test Automation Developer",
       "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
       "period": "May 2008 - May 2011",
       "location": "Stockholm, Sweden",
       "description": "Test Configuration Management (TCM) of Core IMS, CSCF (SIP server). Setup test environment for function test, both real hardware and simulator. Software version control and test configuration management. Maintain Linux servers in lab. Function test automation (Perl, Linux shell). Develop test automation tools and scripts for system load test. System test."
@@ -77,6 +83,7 @@
     {
       "title": "I&V Engineer / System Test Leader / Function Tester / Software Engineer",
       "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
       "period": "June 2003 - May 2008",
       "location": "Stockholm, Sweden | Beijing, China | Shanghai, China",
       "description": "Various roles including function test of Core IMS, CSCF (SIP server) and Media Resource Server MRF, team leadership of IPWorks system test (6 team members), and block designer/function tester of AXE core network for CDMA2000."

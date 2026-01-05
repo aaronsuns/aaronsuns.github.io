@@ -176,6 +176,43 @@ section {
 }
 
 /* Experience Styles */
+.experience-group {
+    margin-bottom: 2.5rem;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.company-name .company-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.company-name .company-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.company-duration {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .experience-item {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
@@ -183,6 +220,15 @@ section {
     border-radius: 0.5rem;
     border-left: 4px solid var(--primary-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-group .experience-item {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+.experience-group .experience-item:last-child {
+    margin-bottom: 2.5rem;
 }
 
 .experience-item:hover {
@@ -206,6 +252,19 @@ section {
     font-weight: 600;
     color: var(--primary-color);
     font-size: 1.1rem;
+}
+
+.company-link {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.company-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .period {
