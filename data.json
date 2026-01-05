@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "name": "Aaron YingCai Sun",
+    "title": "Senior Software Engineer at Klarna",
+    "location": "Stockholm, Sweden",
+    "image": "profile.jpg",
+    "social": {
+      "github": "https://github.com/aaronsuns",
+      "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83",
+      "email": "mailto:aaronsuns@gmail.com"
+    }
+  },
+  "about": [
+    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. Currently designing and operating bank-grade cloud deployment platforms at Klarna, managing centralized cloud infrastructure for hundreds of microservices across development, staging, performance, and production environments. Focus on ensuring high availability, auto-scaling, cost efficiency, and secure operations for mission-critical financial services.",
+    "Expert in multiple programming languages (Go, TypeScript, Java, Python, Perl, C/C++, C#, Erlang) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3), Kubernetes, Docker, and infrastructure automation tools (Ansible, Terraform). Extensive hands-on experience with various database systems (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ), and full-stack development including Vue.js front-end experience.",
+    "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based, including installation, upgrade, monitoring, and maintenance. Experienced in high-availability and stability testing, server performance analysis, and supporting customer deployments and troubleshooting.",
+    "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation design, CI/CD pipeline setup and management (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows including green/blue and canary deployment strategies.",
+    "Passionate about automation, continuous learning, and staying current with emerging technologies in cloud infrastructure, distributed systems, and software engineering practices. Known for thorough problem-solving, systematic approach to complex challenges, and dedication to delivering high-quality, reliable, scalable solutions. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
+      "company": "Klarna",
+      "period": "October 2024 - Present",
+      "location": "Stockholm, Sweden",
+      "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud is part of Klarna Engineering Platform, providing a common, stable platform for Klarna services.",
+      "bullets": [
+        "Managed centralized cloud deployment platform for most of Klarna's services, ensuring secure, stable, cost-efficient operations",
+        "Designed and maintained bank-grade applications with auto-scaling and high availability for production workloads",
+        "Managed service deployments, scaling, networking, certificates, and secrets across dev, staging, performance, and production environments",
+        "Built and operated centralized AWS interfaces for service lifecycle management",
+        "Implemented smooth upgrade and deployment workflows, including green/blue and canary promotion strategies",
+        "Monitored and optimized infrastructure metrics including CPU/memory, AWS ECS task instances, network-layer metrics, Step Functions, and Lambda executions"
+      ],
+      "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Telness Tech",
+      "period": "August 2024 - October 2024",
+      "location": "Stockholm, Sweden",
+      "description": "Golang developer at payment team. The automated digital telco enabler."
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Vizrt",
+      "period": "December 2018 - July 2024",
+      "location": "Stockholm, Sweden",
+      "bullets": [
+        "Developed Media Asset Management system, modular and distributed system",
+        "Maintained system test suite with Python",
+        "Developed plugins for Variant customers"
+      ],
+      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
+    },
+    {
+      "title": "QA & Release Manager",
+      "company": "Connode AB",
+      "period": "August 2012 - December 2018",
+      "location": "Stockholm, Sweden",
+      "description": "System test/function test and release management of an IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test plan/test execution/test automation/CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Development operation and live operation, support for product roll out and troubleshooting."
+    },
+    {
+      "title": "System Tester",
+      "company": "Ericsson",
+      "period": "June 2011 - August 2012",
+      "location": "Stockholm, Sweden",
+      "description": "System test of RBS (Radio Base Station) platform. Write/Execute test-case with Erlang CT/OTP. System test automation. Performance/Capacity/Robustness/Reliability test."
+    },
+    {
+      "title": "TCM & Test Automation Developer",
+      "company": "Ericsson",
+      "period": "May 2008 - May 2011",
+      "location": "Stockholm, Sweden",
+      "description": "Test Configuration Management (TCM) of Core IMS, CSCF (SIP server). Setup test environment for function test, both real hardware and simulator. Software version control and test configuration management. Maintain Linux servers in lab. Function test automation (Perl, Linux shell). Develop test automation tools and scripts for system load test. System test."
+    },
+    {
+      "title": "I&V Engineer / System Test Leader / Function Tester / Software Engineer",
+      "company": "Ericsson",
+      "period": "June 2003 - May 2008",
+      "location": "Stockholm, Sweden | Beijing, China | Shanghai, China",
+      "description": "Various roles including function test of Core IMS, CSCF (SIP server) and Media Resource Server MRF, team leadership of IPWorks system test (6 team members), and block designer/function tester of AXE core network for CDMA2000."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Klarna Code-to-Cloud Platform",
+      "period": "October 2024 - Present",
+      "description": [
+        "Joined the Code-to-Cloud (C2C) team within Klarna Engineering Platform, contributing to the centralized cloud deployment platform that supports most of Klarna's microservices. Developed automated features for AWS infrastructure management and performed bug fixes and improvements to enhance platform stability and efficiency.",
+        "Worked within the existing platform structure to improve and extend features, focusing on service lifecycle management, deployments, scaling, and infrastructure monitoring. Refactored client code from TypeScript to Go to improve performance and maintainability.",
+        "Migrated Jenkins jobs for ECS sidecar upgrades to AWS Code Pipelines, modernizing the CI/CD workflow and improving deployment automation. Contributed to maintaining bank-grade cloud infrastructure with auto-scaling and high availability across development, staging, performance, and production environments."
+      ],
+      "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins, AWS Cloud Infrastructure"
+    },
+    {
+      "title": "Vizrt MAM Development",
+      "period": "December 2018 - July 2024",
+      "description": [
+        "Developed Media Asset Management system, a modular and distributed system. Maintained system test suite with Python. Developed plugins for Variant customers."
+      ],
+      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
+    },
+    {
+      "title": "Connode Solution Test",
+      "period": "June 2012 - December 2018",
+      "description": [
+        "Test environment setup, function test, and system test for IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test automation, CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Agile way of working. Setup continuous integration for server and node side, created/maintained smoke test and daily regression test scripts."
+      ]
+    },
+    {
+      "title": "RBS Platform System Test",
+      "period": "May 2011 - June 2012",
+      "description": [
+        "System test of RBS (Radio Base Station) platform. Agile/Scrum way of working. Mainly used Erlang/OTP/CT for test automation. All test-cases written in Erlang with Common Test framework. Also used Perl/Linux shell scripts as helpers. Performed integration and system tests for different types of RBS platform, for WCDMA/LTE, multi-standard RBS etc."
+      ],
+      "technologies": "Erlang, OTP, CT, Perl, Linux Shell"
+    },
+    {
+      "title": "CSCF Test Environment Setup and Test Automation",
+      "period": "May 2008 - May 2011",
+      "description": [
+        "Setup and maintained test environment for Core IMS, CSCF (SIP server). Used Perl and Linux shell scripts to create convenient work environment for testers. Ensured all servers were in healthy condition. Involved with MAIA sub-project - simulation of telecom server platform (TSP), responsible for integration to R&D development/test environment using VMware/Virtualbox, Soft-IP-routing (ospfd, zebra, openVPN), serving 20+ developers/testers."
+      ],
+      "technologies": "Perl, Linux Shell, VMware, Virtualbox, ClearCase, Subversion"
+    },
+    {
+      "title": "CSCF Test Automation and Regression Test",
+      "period": "July 2007 - May 2008",
+      "description": [
+        "Troubleshooting failed test-cases, corrected errors in test-cases, wrote trouble reports if faults were found in CSCF. Test-case automation and maintained daily runs. Ensured all legacy functions were not broken when new CSCF releases were delivered. Managed around 6000 test-cases running every day."
+      ]
+    },
+    {
+      "title": "IPworks Development",
+      "period": "January 2007 - August 2007",
+      "description": [
+        "IPworks mainly works as DNS/DHCP servers. Supports internal/external DNS, ACL, A/SRV/ENUM records, Dynamic DNS. Also has functions for ERH (External Resource handler) and SS7. MySQL cluster used for back-end data management. One of the key components of the whole IMS architecture. Agile/Scrum way of working."
+      ],
+      "technologies": "MySQL Cluster, DNS, DHCP"
+    },
+    {
+      "title": "CSCF/MRF Development",
+      "period": "January 2006 - December 2006",
+      "description": [
+        "Developed test-cases in Spirent (Protocol testing tool), function test of CSCF/MRF, working with protocols like SIP, diameter, LDAP, TCP/UDP etc, IP networking. Tested several features including system counter accuracy, Lawful Intercept, Number Portability, Third party registration etc."
+      ],
+      "technologies": "Spirent, SIP, Diameter, LDAP, TCP/UDP"
+    },
+    {
+      "title": "CDMA 2000 Development",
+      "period": "June 2003 - December 2005",
+      "description": [
+        "AXE platform block design and function test, using Ericsson PLEX-C/ASA assembler language. FOA (Install First Official Application) in customer site."
+      ],
+      "technologies": "PLEX-C, ASA Assembler"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": "Go, TypeScript, Java, Python, Perl, C/C++, C#, Erlang"
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3), Kubernetes, Docker, Ansible, Terraform"
+    },
+    {
+      "category": "Databases",
+      "items": "PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr"
+    },
+    {
+      "category": "Tools & Practices",
+      "items": "Git, GitLab, Gerrit, Jenkins, CI/CD, Infrastructure as Code, VMWare ESXi, Container (Docker/LXD)"
+    },
+    {
+      "category": "Other Technologies",
+      "items": "REST API, Microservices, ActiveMQ, Memcache, Vue.js, Linux System Administration"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science (BS), Computer Software Engineering",
+      "school": "Southeast University",
+      "period": "2000 - 2004"
+    }
+  ],
+  "contact": {
+    "email": "aaronsuns@gmail.com",
+    "location": "Vasagatan 15A, 17261, Sundbyberg, Sweden",
+    "phone": "+46734123402",
+    "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83"
+  }
+}
+

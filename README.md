@@ -58,12 +58,18 @@ A modern, responsive CV website for Aaron YingCai Sun, built with HTML, CSS, and
 
 ### Update Content
 
-Edit `index.html` to update your CV content:
-- Personal information in the header
-- Experience sections
-- Skills
-- Education
-- Contact information
+**Easy way (Recommended):** Edit `data.json` to update your CV content. All content is stored in this JSON file, making it much easier to maintain:
+- Personal information in the `profile` section
+- About me paragraphs in the `about` array
+- Experience entries in the `experience` array
+- Projects in the `projects` array
+- Skills in the `skills` array
+- Education in the `education` array
+- Contact information in the `contact` object
+
+The website automatically renders all content from `data.json` - no need to edit HTML!
+
+**Legacy way:** You can still edit `index.html` directly, but using `data.json` is much easier and cleaner.
 
 ### Update Styles
 
@@ -105,9 +111,13 @@ To view the website locally:
 
 ```
 cv-website/
-├── index.html      # Main HTML file
+├── index.html      # Main HTML file (structure only, content from data.json)
+├── data.json       # All CV content (easy to edit!)
+├── renderer.js     # Renders content from data.json
 ├── styles.css      # Stylesheet
 ├── script.js       # JavaScript for interactivity
+├── profile.jpg     # Profile picture
+├── favicon.svg     # Website favicon
 └── README.md       # This file
 ```
 

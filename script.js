@@ -68,7 +68,8 @@ if (profileImage) {
 }
 
 // Observe all experience items, project items, and sections
-document.addEventListener('DOMContentLoaded', () => {
+// This will be called after content is rendered
+window.setupAnimations = function() {
     const animatedElements = document.querySelectorAll('.experience-item, .project-item, .skill-category, .education-item, .contact-info');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -76,4 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+};
+
+// Setup animations when DOM is ready (fallback if renderer hasn't run yet)
+document.addEventListener('DOMContentLoaded', () => {
+    // Wait a bit for renderer to finish, then setup animations
+    setTimeout(() => {
+        if (window.setupAnimations) {
+            window.setupAnimations();
+        }
+    }, 200);
 });
