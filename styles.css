@@ -211,6 +211,31 @@ header h1 {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.download-pdf-btn {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background-color 0.2s ease;
+    font-family: inherit;
+}
+
+.download-pdf-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.download-pdf-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* Section Styles */
 section {
     margin-bottom: 3rem;
@@ -650,5 +675,245 @@ footer {
     
     .experience-content ul {
         margin-left: 1.25rem;
+    }
+}
+
+/* Print Styles for PDF Export */
+@media print {
+    @page {
+        margin: 0.5in;
+        /* Note: Browser print headers/footers (URLs, timestamps, page numbers) 
+           must be disabled in the browser's print dialog settings */
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        background: white !important;
+        background-image: none !important;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+    
+    body::before {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: white !important;
+    }
+    
+    header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        page-break-inside: avoid;
+        padding: 1rem 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    header::before {
+        display: none !important;
+    }
+    
+    .profile-section {
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .location {
+        font-size: 0.8rem;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .social-links {
+        display: none;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 0.75rem;
+        padding: 0 !important;
+        break-inside: avoid;
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
+        page-break-after: avoid;
+    }
+    
+    .content p {
+        margin-bottom: 0.5rem;
+        text-align: left;
+        font-size: 10pt;
+        page-break-inside: avoid;
+    }
+    
+    .experience-item,
+    .project-item,
+    .education-item,
+    .contact-info,
+    .skill-category {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb;
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+        background: white !important;
+    }
+    
+    .experience-group {
+        margin-bottom: 0.75rem;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    
+    .experience-group .experience-item {
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        page-break-inside: avoid;
+    }
+    
+    .company-header {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
+        page-break-after: avoid;
+    }
+    
+    .company-name {
+        font-size: 1.1rem;
+    }
+    
+    .experience-header,
+    .project-header {
+        page-break-after: avoid;
+    }
+    
+    .experience-header h3,
+    .project-header h3 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .experience-content,
+    .project-content {
+        page-break-inside: avoid;
+    }
+    
+    .experience-content p,
+    .project-content p {
+        margin-bottom: 0.4rem;
+        font-size: 9.5pt;
+    }
+    
+    .experience-content ul,
+    .project-content ul {
+        margin-left: 1rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        page-break-inside: avoid;
+    }
+    
+    .experience-content li {
+        margin-bottom: 0.3rem;
+        font-size: 9.5pt;
+    }
+    
+    .tech-stack {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        font-size: 9pt;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem;
+        display: grid !important;
+    }
+    
+    .skill-category {
+        padding: 0.6rem;
+        page-break-inside: avoid;
+    }
+    
+    .skill-category h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .skill-category p {
+        font-size: 9pt;
+    }
+    
+    .experience-item:hover,
+    .project-item:hover,
+    .skill-category:hover {
+        transform: none !important;
+    }
+    
+    footer {
+        display: none !important;
+    }
+    
+    a {
+        color: #2563eb !important;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.75em;
+        color: #6b7280;
+    }
+    
+    .download-pdf-btn {
+        display: none !important;
+    }
+    
+    /* Ensure all content is visible */
+    .experience-item,
+    .project-item,
+    .skill-category,
+    .education-item,
+    .contact-info {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+    
+    /* Remove animations and transitions */
+    * {
+        animation: none !important;
+        transition: none !important;
     }
 }

@@ -3,14 +3,34 @@
 
 let cvData = {};
 
+// Make cvData and renderCV globally accessible for print
+window.cvData = cvData;
+window.renderCV = renderCV;
+
 // Load and render CV data
 async function loadCVData() {
     try {
         const response = await fetch('data.json');
         cvData = await response.json();
+        window.cvData = cvData; // Make it globally accessible
         renderCV();
     } catch (error) {
         console.error('Error loading CV data:', error);
+    }
+}
+
+function renderCV() {
+    renderProfile();
+    renderAbout();
+    renderExperience();
+    renderProjects();
+    renderSkills();
+    renderEducation();
+    renderContact();
+    
+    // Trigger animations after content is rendered
+    if (window.setupAnimations) {
+        setTimeout(window.setupAnimations, 50);
     }
 }
 
@@ -341,11 +361,17 @@ function renderContact() {
     if (!contactSection || !cvData.contact) return;
     
     const contact = cvData.contact;
-    contactSection.innerHTML = `
+    let html = `
                     <p><strong>Email:</strong> <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></p>
                     <p><strong>Location:</strong> ${escapeHtml(contact.location)}</p>
                     <p><strong>Phone:</strong> ${escapeHtml(contact.phone)}</p>
                     <p><strong>LinkedIn:</strong> <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">linkedin.com/in/aaron-yingcai-sun-6658b83</a></p>`;
+    
+    if (contact.website) {
+        html += `<p><strong>Website:</strong> <a href="${escapeHtml(contact.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(contact.website)}</a></p>`;
+    }
+    
+    contactSection.innerHTML = html;
 }
 
 function escapeHtml(text) {

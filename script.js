@@ -1,3 +1,30 @@
+// Ensure content is loaded and visible before print
+window.addEventListener('beforeprint', function() {
+    // Force all content to be visible
+    const allElements = document.querySelectorAll('.experience-item, .project-item, .skill-category, .education-item, .contact-info, .experience-group, .company-header');
+    allElements.forEach(el => {
+        el.style.setProperty('opacity', '1', 'important');
+        el.style.setProperty('transform', 'none', 'important');
+        el.style.setProperty('visibility', 'visible', 'important');
+        el.style.setProperty('display', 'block', 'important');
+    });
+    
+    // Ensure all sections are visible
+    document.querySelectorAll('section').forEach(section => {
+        section.style.setProperty('display', 'block', 'important');
+        section.style.setProperty('visibility', 'visible', 'important');
+    });
+    
+    // Ensure containers are visible
+    document.querySelectorAll('#experience, #projects, #skills, #education, #contact').forEach(section => {
+        const container = section.querySelector('h2').nextElementSibling;
+        if (container) {
+            container.style.setProperty('display', 'block', 'important');
+            container.style.setProperty('visibility', 'visible', 'important');
+        }
+    });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -112,6 +139,17 @@ window.setupAnimations = function() {
         });
     });
 };
+
+// Print PDF function - opens print dialog
+function printPDF() {
+    // Ensure all content is visible before printing
+    window.dispatchEvent(new Event('beforeprint'));
+    
+    // Small delay to ensure styles are applied
+    setTimeout(() => {
+        window.print();
+    }, 100);
+}
 
 // Setup animations when DOM is ready (fallback if renderer hasn't run yet)
 document.addEventListener('DOMContentLoaded', () => {
