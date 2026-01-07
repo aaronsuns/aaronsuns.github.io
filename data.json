@@ -11,11 +11,11 @@
     }
   },
   "about": [
-    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. Currently designing and operating bank-grade cloud deployment platforms at Klarna, managing centralized cloud infrastructure for hundreds of microservices across development, staging, performance, and production environments. Focus on ensuring high availability, auto-scaling, cost efficiency, and secure operations for mission-critical financial services.",
-    "Expert in multiple programming languages (Go, TypeScript, Java, Python, Perl, C/C++, C#, Erlang) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3), Kubernetes, Docker, and infrastructure automation tools (Ansible, Terraform). Extensive hands-on experience with various database systems (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ), and full-stack development including Vue.js front-end experience.",
+    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I am part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across development, staging, performance, and production environments. Our work enables resilient, secure, and cost-efficient platforms—delivering automation, visibility, and operational excellence at scale.",
+    "Expert in multiple programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation, and more), Kubernetes (including OpenShift and ArgoCD with experience developing and deploying operators), Docker, and infrastructure automation tools (Ansible, Terraform). Extensive hands-on experience with various database systems (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js front-end experience.",
     "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based, including installation, upgrade, monitoring, and maintenance. Experienced in high-availability and stability testing, server performance analysis, and supporting customer deployments and troubleshooting.",
     "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation design, CI/CD pipeline setup and management (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows including green/blue and canary deployment strategies.",
-    "Passionate about automation, continuous learning, and staying current with emerging technologies in cloud infrastructure, distributed systems, and software engineering practices. Known for thorough problem-solving, systematic approach to complex challenges, and dedication to delivering high-quality, reliable, scalable solutions. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
+    "Passionate about automation, continuous learning, and staying current with emerging technologies in cloud infrastructure, distributed systems, and software engineering practices. Firm believer in keeping things simple (following the Unix/Linux philosophy) and maintaining high quality in all work. Known for thorough problem-solving, systematic approach to complex challenges, and dedication to delivering high-quality, reliable, scalable solutions. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
   ],
   "experience": [
     {
@@ -166,11 +166,11 @@
   "skills": [
     {
       "category": "Programming Languages",
-      "items": "Go, TypeScript, Java, Python, Perl, C/C++, C#, Erlang"
+      "items": "Go, TypeScript, Python, C#, Perl, Java, C/C++, Erlang"
     },
     {
       "category": "Cloud & Infrastructure",
-      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3), Kubernetes, Docker, Ansible, Terraform"
+      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD), Docker, Ansible, Terraform"
     },
     {
       "category": "Databases",
@@ -182,7 +182,7 @@
     },
     {
       "category": "Other Technologies",
-      "items": "REST API, Microservices, ActiveMQ, Memcache, Vue.js, Linux System Administration"
+      "items": "REST API, Microservices, ActiveMQ, SQS, Memcache, Vue.js, Linux System Administration"
     }
   ],
   "education": [
