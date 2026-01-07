@@ -28,12 +28,16 @@
       "bullets": [
         "Managed centralized cloud deployment platform for most of Klarna's services, ensuring secure, stable, cost-efficient operations",
         "Designed and maintained bank-grade applications with auto-scaling and high availability for production workloads",
-        "Managed service deployments, scaling, networking, certificates, and secrets across dev, staging, performance, and production environments",
+        "Developed automated features for AWS infrastructure management and improved platform stability and efficiency",
         "Built and operated centralized AWS interfaces for service lifecycle management",
-        "Implemented smooth upgrade and deployment workflows, including green/blue and canary promotion strategies",
-        "Monitored and optimized infrastructure metrics including CPU/memory, AWS ECS task instances, network-layer metrics, Step Functions, and Lambda executions"
+        "Migrated client code from TypeScript to Go to improve performance and maintainability",
+        "Led migration of Jenkins jobs for ECS sidecar upgrades and ECS daemon service update workflow to AWS Code Pipeline, modernizing CI/CD workflows and deployment automation",
+        "Managed service deployments, scaling, networking, certificates, and secrets across dev, staging, performance, and production environments",
+        "Maintained and improved upgrade and deployment workflows (green/blue and canary promotion strategies), fixing bugs and implementing small enhancements",
+        "Monitored and maintained infrastructure metrics monitoring systems, troubleshooting issues and making incremental improvements",
+        "Participated in go-to person rotation and on-call activities, providing 24/7 support for critical infrastructure and ensuring high availability"
       ],
-      "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda"
+      "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins"
     },
     {
       "title": "Senior Software Engineer",
