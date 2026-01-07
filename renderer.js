@@ -54,18 +54,35 @@ function renderProfile() {
     if (!profile) return;
 
     // Update header
-    document.querySelector('header h1').textContent = profile.name;
-    document.querySelector('.subtitle').textContent = profile.title;
-    document.querySelector('.location').textContent = profile.location;
+    const headerH1 = document.querySelector('header h1');
+    const subtitle = document.querySelector('.subtitle');
+    const location = document.querySelector('.location');
     
-    // Update social links
-    const githubLink = document.querySelector('.social-links a[aria-label="GitHub"]');
-    const linkedinLink = document.querySelector('.social-links a[aria-label="LinkedIn"]');
-    const emailLink = document.querySelector('.social-links a[aria-label="Email"]');
+    if (headerH1 && profile.name) headerH1.textContent = profile.name;
+    if (subtitle && profile.title) subtitle.textContent = profile.title;
+    if (location && profile.location) location.textContent = profile.location;
     
-    if (githubLink) githubLink.href = profile.social.github;
-    if (linkedinLink) linkedinLink.href = profile.social.linkedin;
-    if (emailLink) emailLink.href = profile.social.email;
+    // Update social links - only update if profile.social exists
+    if (profile.social) {
+        const githubLink = document.querySelector('.social-links a[aria-label="GitHub"]');
+        const linkedinLink = document.querySelector('.social-links a[aria-label="LinkedIn"]');
+        const emailLink = document.querySelector('.social-links a[aria-label="Email"]');
+        
+        if (githubLink && profile.social.github) {
+            githubLink.href = profile.social.github;
+            githubLink.target = '_blank';
+            githubLink.rel = 'noopener noreferrer';
+        }
+        if (linkedinLink && profile.social.linkedin) {
+            linkedinLink.href = profile.social.linkedin;
+            linkedinLink.target = '_blank';
+            linkedinLink.rel = 'noopener noreferrer';
+        }
+        if (emailLink && profile.social.email) {
+            emailLink.href = profile.social.email;
+            // Email links shouldn't have target="_blank" by default
+        }
+    }
 }
 
 function renderAbout() {
