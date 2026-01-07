@@ -45,7 +45,8 @@
       "companyUrl": "https://telnesstech.com/",
       "period": "August 2024 - October 2024",
       "location": "Stockholm, Sweden",
-      "description": "Golang developer at payment team. The automated digital telco enabler."
+      "description": "Golang developer at payment team. Integrated Telness's system with Stripe API for billing. The automated digital telco enabler.",
+      "technologies": "Go, GraphQL, Event Sourcing, AWS"
     },
     {
       "title": "Senior Software Engineer",
@@ -54,11 +55,14 @@
       "period": "December 2018 - July 2024",
       "location": "Stockholm, Sweden",
       "bullets": [
-        "Developed Media Asset Management system, modular and distributed system",
-        "Maintained system test suite with Python",
-        "Developed plugins for Variant customers"
+        "Developed and maintained Media Asset Management system, a modular and distributed system, and participated in modernization efforts using Kubernetes and ArgoCD (GitOps)",
+        "Worked on search subsystem, including Solr indexing and complex query implementation for search results",
+        "Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage",
+        "Implemented AI search POC in Python with fuzzy search capabilities using human-readable words for videos, enabling direct navigation to specific video positions, demonstrated at an exhibition",
+        "Developed customer-specific projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients",
+        "Maintained system test suite with Python"
       ],
-      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
+      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
     },
     {
       "title": "QA & Release Manager",
