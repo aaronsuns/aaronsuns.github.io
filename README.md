@@ -39,6 +39,8 @@ A modern, responsive CV website for Aaron YingCai Sun, built with HTML, CSS, and
    - Click **Save**
    - Your site will be available at: `https://aaronsuns.github.io`
 
+   **Note:** For free GitHub accounts, the repository must be **public** for GitHub Pages to work. If you want to keep it private, you'll need GitHub Pro/Team/Enterprise. Alternatively, you can use the site locally and export PDFs for job applications.
+
 ### Option 2: Use a subdirectory in existing repository
 
 1. **Create a `gh-pages` branch:**
@@ -54,11 +56,24 @@ A modern, responsive CV website for Aaron YingCai Sun, built with HTML, CSS, and
    - Select `gh-pages` branch and `/cv-website` folder
    - Your site will be at: `https://aaronsuns.github.io/aaron/cv-website/`
 
+## CV Versions
+
+This repository supports multiple CV versions for different job applications:
+
+- **Default CV**: `data.json` - General purpose CV for most applications
+- **Alternative CV**: `data-alt.json` - Tailored version for specific positions
+
+**Access different versions:**
+- Default: `index.html` or `index.html?cv=default`
+- Alternative: `index.html?cv=alt`
+
+See `CV_VERSIONS.md` for detailed information about CV versions and how to create custom versions.
+
 ## Customization
 
 ### Update Content
 
-**Easy way (Recommended):** Edit `data.json` to update your CV content. All content is stored in this JSON file, making it much easier to maintain:
+**Easy way (Recommended):** Edit `data.json` (or `data-alt.json` for alternative version) to update your CV content. All content is stored in JSON files, making it much easier to maintain:
 - Personal information in the `profile` section
 - About me paragraphs in the `about` array
 - Experience entries in the `experience` array
@@ -67,7 +82,7 @@ A modern, responsive CV website for Aaron YingCai Sun, built with HTML, CSS, and
 - Education in the `education` array
 - Contact information in the `contact` object
 
-The website automatically renders all content from `data.json` - no need to edit HTML!
+The website automatically renders all content from the JSON files - no need to edit HTML!
 
 **Legacy way:** You can still edit `index.html` directly, but using `data.json` is much easier and cleaner.
 
@@ -92,33 +107,39 @@ To view the website locally:
 
 1. **Simple HTTP server (Python):**
    ```bash
-   cd cv-website
    python3 -m http.server 8000
    ```
-   Then open: http://localhost:8000
+   Then open:
+   - Default CV: http://localhost:8000/index.html
+   - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 2. **Simple HTTP server (Node.js):**
    ```bash
-   cd cv-website
    npx http-server -p 8000
    ```
+   Then open:
+   - Default CV: http://localhost:8000/index.html
+   - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 3. **VS Code Live Server:**
    - Install "Live Server" extension
    - Right-click on `index.html` and select "Open with Live Server"
+   - For alternative version, add `?cv=alt` to the URL in your browser
 
 ## File Structure
 
 ```
 cv-website/
-├── index.html      # Main HTML file (structure only, content from data.json)
-├── data.json       # All CV content (easy to edit!)
-├── renderer.js     # Renders content from data.json
-├── styles.css      # Stylesheet
-├── script.js       # JavaScript for interactivity
-├── profile.jpg     # Profile picture
-├── favicon.svg     # Website favicon
-└── README.md       # This file
+├── index.html         # Main HTML file (structure only, content from JSON)
+├── data.json          # Default CV content (easy to edit!)
+├── data-alt.json      # Alternative tailored CV content
+├── renderer.js        # Renders content from JSON files
+├── styles.css         # Stylesheet
+├── script.js          # JavaScript for interactivity
+├── profile.jpg        # Profile picture
+├── favicon.svg        # Website favicon
+├── CV_VERSIONS.md     # Guide for CV versions
+└── README.md          # This file
 ```
 
 ## Browser Support

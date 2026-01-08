@@ -1,0 +1,190 @@
+{
+  "profile": {
+    "name": "Aaron YingCai Sun",
+    "title": "Senior Software Engineer at Klarna",
+    "location": "Stockholm, Sweden",
+    "image": "profile.jpg",
+    "social": {
+      "github": "https://github.com/aaronsuns",
+      "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83",
+      "email": "mailto:aaronsuns@gmail.com"
+    }
+  },
+  "about": [
+    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I'm part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across all environments.",
+    "Expert in Java and modern programming languages (Go, TypeScript, Python, C#, Perl) with extensive experience in system architecture design, data flow implementation, and business process automation. Strong background in cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD with operator development experience), Docker, and infrastructure automation (Terraform, Ansible). Extensive experience with databases (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr) and message queues (ActiveMQ, SQS). Full-stack development experience including TypeScript, JavaScript, HTML/CSS, and Vue.js.",
+    "Proven track record in designing and implementing automated workflows, system integrations, and data flows for complex distributed systems. Successfully architected and maintained large-scale R&D and production infrastructure, both on-premise and cloud-based. Experienced in high-availability systems, performance optimization, capacity planning, and troubleshooting complex distributed systems.",
+    "Strong technical leader with experience mentoring engineers, leading cross-functional teams (including leading a 6-person system test team), and driving technical initiatives. Extensive background in business process automation, workflow design, and large-scale test automation. Experienced in CI/CD pipeline setup (Jenkins, GitLab, Git/Gerrit) and enabling smooth deployment workflows with green/blue and canary strategies. Agile/Scrum practitioner with hands-on experience in iterative development and continuous improvement.",
+    "Passionate about automation, AI/ML technologies, and process efficiency. Implemented AI-powered search solutions using natural language processing and fuzzy matching. Keen interest in emerging technologies including Generative AI, LLM integration, and agentic systems. Firm believer in keeping things simple (Unix/Linux philosophy) and maintaining high quality in all work. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
+      "company": "Klarna",
+      "companyUrl": "https://www.klarna.com/",
+      "period": "October 2024 - Present",
+      "location": "Stockholm, Sweden",
+      "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud is part of Klarna Engineering Platform, providing a common, stable platform for Klarna services.",
+      "bullets": [
+        "Designed and implemented automated workflows and system integrations for centralized cloud deployment platform, ensuring secure, stable, cost-efficient operations for bank-grade financial services",
+        "Architected and maintained automated processes for service deployments, scaling, networking, certificates, and secrets across multiple environments, implementing sophisticated data flows between systems",
+        "Built and maintained AWS automation platform enabling Klarna engineers to manage service lifecycle through automated workflows with green/blue and canary promotion strategies",
+        "Collaborated with IT architects and cross-functional teams to define process implementation designs and technical capabilities",
+        "Migrated client code from TypeScript to Go, demonstrating full-stack development capabilities and system optimization expertise",
+        "Led migration of Jenkins jobs to AWS Code Pipeline, modernizing CI/CD workflows and deployment automation processes",
+        "Participated in go-to person rotation and on-call activities, providing 24/7 support for critical infrastructure and ensuring high availability"
+      ],
+      "technologies": "TypeScript, JavaScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins, Terraform, System Design, Process Automation"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Telness Tech",
+      "companyUrl": "https://telnesstech.com/",
+      "period": "August 2024 - October 2024",
+      "description": "Golang developer at payment team. Integrated Telness's system with Stripe API for billing. The automated digital telco enabler.",
+      "technologies": "Go, GraphQL, Event Sourcing, AWS, System Integration"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Vizrt",
+      "companyUrl": "https://www.vizrt.com/",
+      "period": "December 2018 - July 2024",
+      "location": "Stockholm, Sweden",
+      "bullets": [
+        "Designed and developed Media Asset Management system, a modular and distributed system with complex data flows, participating in modernization efforts using Kubernetes and OpenShift with ArgoCD (GitOps)",
+        "Architected and implemented search subsystem with Solr indexing and complex query implementation, designing efficient data flows for search results",
+        "Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage through optimized data processing",
+        "Implemented AI search POC in Python with fuzzy search capabilities using natural language processing, enabling intelligent search with human-readable words for videos - demonstrated at an exhibition",
+        "Designed and developed customer-specific integration projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients",
+        "Maintained system test suite with Python, ensuring quality and reliability of automated processes"
+      ],
+      "technologies": "Golang, Python, Java, C#, Kubernetes, OpenShift, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, System Design, Data Flows, AI/ML"
+    },
+    {
+      "title": "QA & Release Manager",
+      "company": "Connode AB",
+      "companyUrl": "https://cyanconnode.com/",
+      "period": "August 2012 - December 2018",
+      "location": "Stockholm, Sweden",
+      "description": "System test, function test, and release management of an IoT product for smart metering projects. Narrowband IoT RF mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols.",
+      "bullets": [
+        "Designed and implemented automated test processes and workflows for large-scale IoT systems",
+        "Architected test automation frameworks and CI/CD pipelines, creating efficient data flows for test execution and reporting",
+        "Designed and executed large-scale performance tests, analyzing system behavior and data flows",
+        "Set up and automated test clusters with load balancer in AWS, implementing infrastructure as code practices",
+        "Conducted high availability, characteristics, and stability testing, ensuring robust system design",
+        "Managed development and live operations, supporting product roll-out and troubleshooting complex system integrations"
+      ],
+      "technologies": "Python, Perl, Java, CoAP, 6LoWPAN, C, RTOS, IoT, AWS, MongoDB, Process Automation, System Design"
+    },
+    {
+      "title": "System Tester",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "June 2011 - August 2012",
+      "location": "Stockholm, Sweden",
+      "description": "System test of RBS (Radio Base Station) platform. Write/Execute test-case with Erlang CT/OTP. System test automation. Performance/Capacity/Robustness/Reliability test. Agile/Scrum way of working.",
+      "technologies": "Erlang, OTP, CT, Perl, Linux Shell, Agile, Scrum"
+    },
+    {
+      "title": "TCM & Test Automation Developer",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "May 2008 - May 2011",
+      "location": "Stockholm, Sweden",
+      "description": "Test Configuration Management (TCM) of Core IMS, CSCF (SIP server). Setup test environment for function test, both real hardware and simulator. Software version control and test configuration management. Maintain Linux servers in lab. Function test automation (Perl, Linux shell). Develop test automation tools and scripts for system load test. System test.",
+      "technologies": "Perl, Linux Shell, Test Automation, Process Automation"
+    },
+    {
+      "title": "I&V Engineer / System Test Leader / Function Tester / Software Engineer",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "June 2003 - May 2008",
+      "location": "Stockholm, Sweden | Beijing, China | Shanghai, China",
+      "description": "Various roles including function test of Core IMS, CSCF (SIP server) and Media Resource Server MRF, team leadership of IPWorks system test (6 team members - Tech Lead experience), and block designer/function tester of AXE core network for CDMA2000. Agile/Scrum way of working.",
+      "bullets": [
+        "Led system test team of 6 members, providing technical leadership and mentoring",
+        "Designed and tested complex system integrations and data flows for Core IMS and CSCF systems",
+        "Collaborated with business stakeholders to understand requirements and explain technical capabilities"
+      ],
+      "technologies": "System Design, Data Flows, Tech Lead, Agile, Scrum"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Klarna Code-to-Cloud Platform - Process Automation",
+      "period": "October 2024 - Present",
+      "description": [
+        "Contributed to Klarna Engineering Platform's Code-to-Cloud (C2C) team, managing the centralized cloud deployment platform for most of Klarna's services. Designed and implemented automated workflows and system integrations for service lifecycle management.",
+        "Developed automated features for AWS infrastructure management using Terraform, improving platform stability and efficiency. Designed data flows between deployment systems, monitoring systems, and service registries.",
+        "Led migration of Jenkins jobs to AWS Code Pipeline, modernizing CI/CD workflows and deployment automation. Designed and implemented upgrade and deployment workflows (green/blue and canary promotion strategies) with sophisticated process automation."
+      ],
+      "technologies": "TypeScript, JavaScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins, Terraform, System Design, Process Automation, Data Flows"
+    },
+    {
+      "title": "Vizrt MAM Development - AI-Powered Search",
+      "period": "December 2018 - July 2024",
+      "description": [
+        "Developed and maintained Media Asset Management system, a modular and distributed system. Participated in modernization efforts using Kubernetes and OpenShift with ArgoCD (GitOps) to migrate from legacy infrastructure.",
+        "Designed and implemented search subsystem with complex data flows, including Solr indexing and query implementation. Refactored search subsystem code extensively, significantly improving performance through optimized data processing.",
+        "Implemented AI search POC in Python with natural language processing and fuzzy search capabilities, enabling intelligent search with human-readable words for videos. This project demonstrated expertise in AI/ML technologies and innovative problem-solving."
+      ],
+      "technologies": "Golang, Python, Java, Kubernetes, OpenShift, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, System Design, Data Flows, AI/ML, Natural Language Processing"
+    },
+    {
+      "title": "Connode IoT Solution - Process Automation",
+      "period": "August 2012 - December 2018",
+      "description": [
+        "System test, function test, and release management of an IoT product for smart metering projects. Designed automated test processes and workflows for large-scale IoT systems.",
+        "Architected test automation frameworks and CI/CD pipelines, creating efficient data flows for test execution. Designed and executed large-scale performance tests, analyzing system behavior and data flows.",
+        "Set up and automated test clusters with load balancer in AWS using infrastructure as code. Conducted high availability, characteristics, and stability testing, ensuring robust system design."
+      ],
+      "technologies": "Python, Perl, Java, CoAP, 6LoWPAN, C, RTOS, IoT, AWS, MongoDB, Process Automation, System Design, Data Flows"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": "Java, Go, TypeScript, JavaScript, Python, C#, Perl, C/C++, Erlang"
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation, Code Pipeline), Kubernetes (OpenShift, ArgoCD), Docker, Terraform, Ansible, GCP (willing to learn)"
+    },
+    {
+      "category": "Databases & Message Queues",
+      "items": "PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr, MongoDB, Kafka (willing to learn), ActiveMQ, SQS"
+    },
+    {
+      "category": "Front-End Development",
+      "items": "TypeScript, JavaScript, HTML/CSS, Vue.js, Modern Front-End Frameworks"
+    },
+    {
+      "category": "System Design & Process Automation",
+      "items": "System Architecture Design, Data Flow Design, Business Process Analysis, Workflow Automation, System Integration, Microservices Architecture"
+    },
+    {
+      "category": "AI/ML Technologies",
+      "items": "AI/ML Development, Natural Language Processing, Fuzzy Search, Prompt Engineering, LLM Integration, Agentic AI"
+    },
+    {
+      "category": "Tools & Practices",
+      "items": "Git, GitLab, Gerrit, Jenkins, CI/CD, Infrastructure as Code, Agile, Scrum, Tech Lead Experience"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science (BS), Computer Software Engineering",
+      "school": "Southeast University",
+      "period": "2000 - 2004"
+    }
+  ],
+  "contact": {
+    "email": "aaronsuns@gmail.com",
+    "location": "Vasagatan 15A, 17261, Sundbyberg, Sweden",
+    "phone": "+46734123402",
+    "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83",
+    "website": "https://aaronsuns.github.io/"
+  }
+}
+

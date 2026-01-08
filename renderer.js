@@ -10,27 +10,21 @@ window.renderCV = renderCV;
 // Load and render CV data
 async function loadCVData() {
     try {
-        const response = await fetch('data.json');
+        // Check for query parameter to load different CV versions
+        const urlParams = new URLSearchParams(window.location.search);
+        const cvVersion = urlParams.get('cv') || 'default';
+        
+        let dataFile = 'data.json';
+        if (cvVersion === 'alt') {
+            dataFile = 'data-alt.json';
+        }
+        
+        const response = await fetch(dataFile);
         cvData = await response.json();
         window.cvData = cvData; // Make it globally accessible
         renderCV();
     } catch (error) {
         console.error('Error loading CV data:', error);
-    }
-}
-
-function renderCV() {
-    renderProfile();
-    renderAbout();
-    renderExperience();
-    renderProjects();
-    renderSkills();
-    renderEducation();
-    renderContact();
-    
-    // Trigger animations after content is rendered
-    if (window.setupAnimations) {
-        setTimeout(window.setupAnimations, 50);
     }
 }
 

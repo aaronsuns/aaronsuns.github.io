@@ -11,11 +11,11 @@
     }
   },
   "about": [
-    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I am part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across development, staging, performance, and production environments. Our work enables resilient, secure, and cost-efficient platforms—delivering automation, visibility, and operational excellence at scale.",
-    "Expert in multiple programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation, and more), Kubernetes (including OpenShift and ArgoCD with experience developing and deploying operators), Docker, and infrastructure automation tools (Ansible, Terraform). Extensive hands-on experience with various database systems (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js front-end experience.",
-    "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based, including installation, upgrade, monitoring, and maintenance. Experienced in high-availability and stability testing, server performance analysis, and supporting customer deployments and troubleshooting.",
-    "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation design, CI/CD pipeline setup and management (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows including green/blue and canary deployment strategies.",
-    "Passionate about automation, continuous learning, and staying current with emerging technologies in cloud infrastructure, distributed systems, and software engineering practices. Firm believer in keeping things simple (following the Unix/Linux philosophy) and maintaining high quality in all work. Known for thorough problem-solving, systematic approach to complex challenges, and dedication to delivering high-quality, reliable, scalable solutions. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
+    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I'm part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across all environments.",
+    "Expert in programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD with operator development experience), Docker, and infrastructure automation (Ansible, Terraform). Extensive experience with databases (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js.",
+    "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based. Experienced in high-availability testing, server performance analysis, and supporting customer deployments.",
+    "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation, CI/CD pipeline setup (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows with green/blue and canary strategies.",
+    "Passionate about automation, AI/ML technologies, and process efficiency. Implemented AI-powered search solutions using natural language processing and fuzzy matching. Keen interest in emerging technologies including Generative AI, LLM integration, and agentic systems. Firm believer in keeping things simple (Unix/Linux philosophy) and maintaining high quality in all work. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
   ],
   "experience": [
     {
@@ -75,7 +75,7 @@
         "Conducted high availability, characteristics, and stability testing",
         "Managed development and live operations, supporting product roll-out and troubleshooting"
       ],
-      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS"
+      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS, MongoDB"
     },
     {
       "title": "System Tester",
@@ -132,7 +132,7 @@
         "Responsible for test planning, test execution, test automation, and CI setup and maintenance. Designed and executed large-scale performance tests.",
         "Set up and automated test clusters with load balancer in AWS. Conducted high availability, characteristics, and stability testing. Setup continuous integration for both server and node side, created and maintained smoke tests and daily regression test scripts."
       ],
-      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS"
+      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS, MongoDB"
     },
     {
       "title": "RBS Platform System Test",
@@ -193,11 +193,15 @@
     },
     {
       "category": "Databases",
-      "items": "PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr"
+      "items": "PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr, MongoDB"
     },
     {
       "category": "Tools & Practices",
       "items": "Git, GitLab, Gerrit, Jenkins, CI/CD, Infrastructure as Code, VMWare ESXi, Container (Docker/LXD)"
+    },
+    {
+      "category": "AI/ML Technologies",
+      "items": "AI/ML Development, Natural Language Processing, Fuzzy Search, Prompt Engineering, LLM Integration, Agentic AI"
     },
     {
       "category": "Other Technologies",
