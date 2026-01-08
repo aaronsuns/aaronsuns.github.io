@@ -70,7 +70,15 @@
       "companyUrl": "https://cyanconnode.com/",
       "period": "August 2012 - December 2018",
       "location": "Stockholm, Sweden",
-      "description": "System test/function test and release management of an IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test plan/test execution/test automation/CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Development operation and live operation, support for product roll out and troubleshooting."
+      "description": "System test, function test, and release management of an IoT product for smart metering projects. Narrowband IoT RF mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols.",
+      "bullets": [
+        "Responsible for test planning, test execution, test automation, and CI setup and maintenance",
+        "Designed and executed large-scale performance tests",
+        "Set up and automated test clusters with load balancer in AWS",
+        "Conducted high availability, characteristics, and stability testing",
+        "Managed development and live operations, supporting product roll-out and troubleshooting"
+      ],
+      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS"
     },
     {
       "title": "System Tester",
@@ -102,9 +110,9 @@
       "title": "Klarna Code-to-Cloud Platform",
       "period": "October 2024 - Present",
       "description": [
-        "Joined the Code-to-Cloud (C2C) team within Klarna Engineering Platform, contributing to the centralized cloud deployment platform that supports most of Klarna's microservices. Developed automated features for AWS infrastructure management and performed bug fixes and improvements to enhance platform stability and efficiency.",
-        "Worked within the existing platform structure to improve and extend features, focusing on service lifecycle management, deployments, scaling, and infrastructure monitoring. Refactored client code from TypeScript to Go to improve performance and maintainability.",
-        "Migrated Jenkins jobs for ECS sidecar upgrades to AWS Code Pipelines, modernizing the CI/CD workflow and improving deployment automation. Contributed to maintaining bank-grade cloud infrastructure with auto-scaling and high availability across development, staging, performance, and production environments."
+        "Contributed to Klarna Engineering Platform's Code-to-Cloud (C2C) team, managing the centralized cloud deployment platform for most of Klarna's services. Worked within the existing platform structure to improve and extend features, focusing on service lifecycle management, deployments, scaling, and infrastructure monitoring.",
+        "Developed automated features for AWS infrastructure management and improved platform stability and efficiency. Migrated client code from TypeScript to Go to improve performance and maintainability.",
+        "Led migration of Jenkins jobs for ECS sidecar upgrades and ECS daemon service update workflow to AWS Code Pipeline, modernizing CI/CD workflows and deployment automation. Maintained and improved upgrade and deployment workflows (green/blue and canary promotion strategies), fixing bugs and implementing enhancements."
       ],
       "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins, AWS Cloud Infrastructure"
     },
@@ -112,16 +120,22 @@
       "title": "Vizrt MAM Development",
       "period": "December 2018 - July 2024",
       "description": [
-        "Developed Media Asset Management system, a modular and distributed system. Maintained system test suite with Python. Developed plugins for Variant customers."
+        "Developed and maintained Media Asset Management system, a modular and distributed system. Participated in modernization efforts using Kubernetes and ArgoCD (GitOps) to migrate from legacy infrastructure.",
+        "Worked extensively on search subsystem, including Solr indexing and complex query implementation for search results. Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage.",
+        "Implemented AI search POC in Python with fuzzy search capabilities using human-readable words for videos, enabling direct navigation to specific video positions. Demonstrated at an exhibition.",
+        "Developed customer-specific projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients. Maintained system test suite with Python."
       ],
-      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
+      "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
     },
     {
       "title": "Connode Solution Test",
-      "period": "June 2012 - December 2018",
+      "period": "August 2012 - December 2018",
       "description": [
-        "Test environment setup, function test, and system test for IoT product. Radio mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols. Responsible for test automation, CI setup and maintenance, large performance test, setup/automate test cluster with load balancer in AWS, high availability/characteristics/stability test. Agile way of working. Setup continuous integration for server and node side, created/maintained smoke test and daily regression test scripts."
-      ]
+        "System test, function test, and release management of an IoT product for smart metering projects. Narrowband IoT RF mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols.",
+        "Responsible for test planning, test execution, test automation, and CI setup and maintenance. Designed and executed large-scale performance tests.",
+        "Set up and automated test clusters with load balancer in AWS. Conducted high availability, characteristics, and stability testing. Setup continuous integration for both server and node side, created and maintained smoke tests and daily regression test scripts."
+      ],
+      "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS"
     },
     {
       "title": "RBS Platform System Test",
@@ -178,7 +192,7 @@
     },
     {
       "category": "Cloud & Infrastructure",
-      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD), Docker, Ansible, Terraform"
+      "items": "AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation, Code Pipeline), Kubernetes (OpenShift, ArgoCD), Docker, Ansible, Terraform"
     },
     {
       "category": "Databases",
@@ -190,7 +204,7 @@
     },
     {
       "category": "Other Technologies",
-      "items": "REST API, Microservices, ActiveMQ, SQS, Memcache, Vue.js, Linux System Administration"
+      "items": "REST API, GraphQL, Microservices, Event Sourcing, ActiveMQ, SQS, Memcache, Vue.js, CoAP, 6LoWPAN, RTOS, IoT, Linux System Administration"
     }
   ],
   "education": [
