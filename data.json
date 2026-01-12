@@ -215,6 +215,21 @@
       "period": "2000 - 2004"
     }
   ],
+  "honors": [
+    {
+      "title": "Excellent employee Award",
+      "issuer": "Dan Redin- Vice president and CTO, Ericsson China R&D institute",
+      "date": "Jan 2007",
+      "associatedWith": "Ericsson"
+    },
+    {
+      "title": "Runner-up of Great China university IT contest",
+      "issuer": "hong kong technical university",
+      "date": "Jun 2003",
+      "associatedWith": "Southeast University",
+      "description": "IT contest between 800 university in China, Hongkong, Macau, Taiwan."
+    }
+  ],
   "contact": {
     "email": "aaronsuns@gmail.com",
     "location": "Vasagatan 15A, 17261, Sundbyberg, Sweden",

@@ -576,6 +576,49 @@ section {
     margin-bottom: 0.25rem;
 }
 
+/* Honors Styles */
+.honor-item {
+    padding: 1.75rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 0.75rem;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.honor-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-left-color: var(--accent-color);
+}
+
+.honor-item h3 {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.honor-details {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.honor-association {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.honor-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
 /* Contact Styles */
 .contact-info {
     padding: 1.75rem;
@@ -818,6 +861,7 @@ footer {
     .experience-item,
     .project-item,
     .education-item,
+    .honor-item,
     .contact-info,
     .skill-category {
         page-break-inside: avoid;
@@ -942,6 +986,7 @@ footer {
     .project-item,
     .skill-category,
     .education-item,
+    .honor-item,
     .contact-info {
         opacity: 1 !important;
         transform: none !important;

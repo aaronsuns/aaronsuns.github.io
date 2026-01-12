@@ -35,6 +35,7 @@ function renderCV() {
     renderProjects();
     renderSkills();
     renderEducation();
+    renderHonors();
     renderContact();
     
     // Trigger animations after content is rendered
@@ -365,6 +366,35 @@ function renderEducation() {
                     <p class="school">${escapeHtml(edu.school)}</p>
                     <p class="period">${escapeHtml(edu.period)}</p>
                 </div>`).join('\n            ');
+}
+
+function renderHonors() {
+    const honorsSection = document.querySelector('#honors');
+    if (!honorsSection || !cvData.honors) return;
+    
+    const honorsContainer = honorsSection.querySelector('h2').nextElementSibling || 
+                            document.createElement('div');
+    if (!honorsSection.querySelector('h2').nextElementSibling) {
+        honorsSection.appendChild(honorsContainer);
+    }
+    
+    honorsContainer.innerHTML = cvData.honors.map(honor => {
+        let html = `
+                <div class="honor-item">
+                    <h3>${escapeHtml(honor.title)}</h3>
+                    <p class="honor-details">Issued by ${escapeHtml(honor.issuer)} · ${escapeHtml(honor.date)}</p>`;
+        
+        if (honor.associatedWith) {
+            html += `<p class="honor-association">Associated with ${escapeHtml(honor.associatedWith)}</p>`;
+        }
+        
+        if (honor.description) {
+            html += `<p class="honor-description">${escapeHtml(honor.description)}</p>`;
+        }
+        
+        html += `</div>`;
+        return html;
+    }).join('\n            ');
 }
 
 function renderContact() {
