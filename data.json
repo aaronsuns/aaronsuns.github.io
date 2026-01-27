@@ -22,7 +22,7 @@
       "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
       "company": "Klarna",
       "companyUrl": "https://www.klarna.com/",
-      "period": "October 2024 - Present",
+      "period": "September 2024 - Present",
       "location": "Stockholm, Sweden",
       "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud is part of Klarna Engineering Platform, providing a common, stable platform for Klarna services.",
       "bullets": [
@@ -38,18 +38,9 @@
     },
     {
       "title": "Senior Software Engineer",
-      "company": "Telness Tech",
-      "companyUrl": "https://telnesstech.com/",
-      "period": "August 2024 - October 2024",
-      "location": "Stockholm, Sweden",
-      "description": "Golang developer at payment team. Integrated Telness's system with Stripe API for billing. The automated digital telco enabler.",
-      "technologies": "Go, GraphQL, Event Sourcing, AWS"
-    },
-    {
-      "title": "Senior Software Engineer",
       "company": "Vizrt",
       "companyUrl": "https://www.vizrt.com/",
-      "period": "December 2018 - July 2024",
+      "period": "December 2018 - August 2024",
       "location": "Stockholm, Sweden",
       "bullets": [
         "Developed and maintained Media Asset Management system, a modular and distributed system, and participated in modernization efforts using Kubernetes and ArgoCD (GitOps)",
@@ -108,7 +99,7 @@
   "projects": [
     {
       "title": "Klarna Code-to-Cloud Platform",
-      "period": "October 2024 - Present",
+      "period": "September 2024 - Present",
       "description": [
         "Contributed to Klarna Engineering Platform's Code-to-Cloud (C2C) team, managing the centralized cloud deployment platform for most of Klarna's services. Worked within the existing platform structure to improve and extend features, focusing on service lifecycle management, deployments, scaling, and infrastructure monitoring.",
         "Developed automated features for AWS infrastructure management and improved platform stability and efficiency. Migrated client code from TypeScript to Go to improve performance and maintainability.",
@@ -118,7 +109,7 @@
     },
     {
       "title": "Vizrt MAM Development",
-      "period": "December 2018 - July 2024",
+      "period": "December 2018 - August 2024",
       "description": [
         "Developed and maintained Media Asset Management system, a modular and distributed system. Participated in modernization efforts using Kubernetes and ArgoCD (GitOps) to migrate from legacy infrastructure.",
         "Worked extensively on search subsystem, including Solr indexing and complex query implementation for search results. Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage.",
