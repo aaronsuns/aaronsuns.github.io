@@ -13,7 +13,7 @@
   "about": [
     "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I'm part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across all environments.",
     "Expert in programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD with operator development experience), Docker, and infrastructure automation (Ansible, Terraform). Extensive experience with databases (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js.",
-    "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based. Experienced in high-availability testing, server performance analysis, and supporting customer deployments.",
+    "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based. Experienced in high-availability testing, server performance analysis, and supporting customer deployments. Strong customer-facing experience working directly with enterprise clients to understand requirements, design solutions, and deliver integrations, including on-site deployments and technical collaboration.",
     "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation, CI/CD pipeline setup (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows with green/blue and canary strategies.",
     "Passionate about automation, AI/ML technologies, and process efficiency. Implemented AI-powered search solutions using natural language processing and fuzzy matching. Keen interest in emerging technologies including Generative AI, LLM integration, and agentic systems. Firm believer in keeping things simple (Unix/Linux philosophy) and maintaining high quality in all work. Strong advocate for best practices in infrastructure as code, observability, and DevOps culture."
   ],
@@ -56,6 +56,7 @@
         "Worked on search subsystem, including Solr indexing and complex query implementation for search results",
         "Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage",
         "Implemented AI search POC in Python with fuzzy search capabilities using human-readable words for videos, enabling direct navigation to specific video positions, demonstrated at an exhibition",
+        "Worked directly with enterprise customers to understand requirements and deliver custom integrations: refactored and integrated MAM search subsystem for NISV (Netherlands Institute for Sound and Vision), developed MAM plugins for Real Madrid TV and Adobe Experience Manager (AEM) to integrate with Vizrt products",
         "Developed customer-specific projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients",
         "Maintained system test suite with Python"
       ],
@@ -73,6 +74,8 @@
         "Designed and executed large-scale performance tests",
         "Set up and automated test clusters with load balancer in AWS",
         "Conducted high availability, characteristics, and stability testing",
+        "Worked directly with enterprise customers on-site: traveled to UK to collaborate with Telefonica UK (O2) to setup Connode solution in high-availability mode, configured performance testing with simulators for load testing",
+        "Collaborated with Reliance to integrate and test Connode solution, ensuring successful deployment and system integration",
         "Managed development and live operations, supporting product roll-out and troubleshooting"
       ],
       "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS, MongoDB"
@@ -120,6 +123,7 @@
         "Developed and maintained Media Asset Management system, a modular and distributed system. Participated in modernization efforts using Kubernetes and ArgoCD (GitOps) to migrate from legacy infrastructure.",
         "Worked extensively on search subsystem, including Solr indexing and complex query implementation for search results. Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage.",
         "Implemented AI search POC in Python with fuzzy search capabilities using human-readable words for videos, enabling direct navigation to specific video positions. Demonstrated at an exhibition.",
+        "Collaborated directly with enterprise customers to deliver custom solutions: refactored and integrated MAM search subsystem for NISV (Netherlands Institute for Sound and Vision), developed MAM plugins for Real Madrid TV and Adobe Experience Manager (AEM) to integrate with Vizrt products.",
         "Developed customer-specific projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients. Maintained system test suite with Python."
       ],
       "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
@@ -130,6 +134,7 @@
       "description": [
         "System test, function test, and release management of an IoT product for smart metering projects. Narrowband IoT RF mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP open protocols.",
         "Responsible for test planning, test execution, test automation, and CI setup and maintenance. Designed and executed large-scale performance tests.",
+        "Worked directly with enterprise customers: traveled to UK on-site to collaborate with Telefonica UK (O2) to setup Connode solution in high-availability mode, configured performance testing with simulators for load testing. Collaborated with Reliance to integrate and test Connode solution.",
         "Set up and automated test clusters with load balancer in AWS. Conducted high availability, characteristics, and stability testing. Setup continuous integration for both server and node side, created and maintained smoke tests and daily regression test scripts."
       ],
       "technologies": "Python, Perl, CoAP, 6LoWPAN, Java, C, RTOS, IoT, Texas Instruments Radio Chips, AWS, MongoDB"
