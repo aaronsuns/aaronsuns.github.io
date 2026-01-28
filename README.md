@@ -101,6 +101,24 @@ Edit `script.js` to modify:
 - Scroll animations
 - Interactive features
 
+## PDF Generation
+
+Generate a professional PDF version of your CV automatically:
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Generate PDF:**
+   ```bash
+   npm run generate-pdf
+   ```
+
+This will create `Aaron Yingcai Sun.pdf` in the root directory. The script uses Puppeteer to render the PDF-optimized version (`cv-pdf.html`) with proper print settings.
+
+**Note:** The PDF file is excluded from git (see `.gitignore`). You can manually add it if you want to track it in version control.
+
 ## Local Development
 
 To view the website locally:
@@ -111,6 +129,7 @@ To view the website locally:
    ```
    Then open:
    - Default CV: http://localhost:8000/index.html
+   - PDF version: http://localhost:8000/cv-pdf.html
    - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 2. **Simple HTTP server (Node.js):**
@@ -119,6 +138,7 @@ To view the website locally:
    ```
    Then open:
    - Default CV: http://localhost:8000/index.html
+   - PDF version: http://localhost:8000/cv-pdf.html
    - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 3. **VS Code Live Server:**
@@ -131,11 +151,16 @@ To view the website locally:
 ```
 cv-website/
 ├── index.html         # Main HTML file (structure only, content from JSON)
+├── cv-pdf.html        # PDF-optimized HTML version
 ├── data.json          # Default CV content (easy to edit!)
 ├── data-alt.json      # Alternative tailored CV content
 ├── renderer.js        # Renders content from JSON files
-├── styles.css         # Stylesheet
+├── renderer-pdf.js    # Renders PDF version from JSON files
+├── styles.css         # Stylesheet for main website
+├── cv-pdf.css         # Stylesheet for PDF version
 ├── script.js          # JavaScript for interactivity
+├── generate-pdf.js    # Script to generate PDF automatically
+├── package.json       # Node.js dependencies
 ├── profile.jpg        # Profile picture
 ├── favicon.svg        # Website favicon
 ├── CV_VERSIONS.md     # Guide for CV versions

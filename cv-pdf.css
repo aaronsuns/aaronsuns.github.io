@@ -1,0 +1,546 @@
+/* PDF-Optimized CV Styles - Professional Print Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e40af;
+    --primary-light: #3b82f6;
+    --text-color: #111827;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --text-lighter: #9ca3af;
+    --border-color: #d1d5db;
+    --accent-bg: #eff6ff;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cv-container {
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.4in;
+    background: white;
+}
+
+/* Header - Professional with photo and contact */
+.cv-header {
+    margin-bottom: 0.25in;
+    padding-bottom: 0.15in;
+    border-bottom: 3px solid var(--primary-color);
+    position: relative;
+}
+
+.cv-header::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 1.5in;
+    height: 3px;
+    background: var(--primary-light);
+}
+
+.header-content {
+    display: flex;
+    gap: 0.25in;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 1.7in;
+    height: 1.7in;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.04in;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.title {
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.12in;
+    letter-spacing: 0.2px;
+}
+
+.contact-header {
+    font-size: 9pt;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.contact-header p {
+    margin-bottom: 0.02in;
+    display: flex;
+    align-items: center;
+    gap: 0.05in;
+}
+
+.contact-header p strong {
+    font-weight: 600;
+    color: var(--text-dark);
+    min-width: 0.5in;
+}
+
+.contact-header a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+/* Sections */
+.cv-section {
+    margin-bottom: 0.18in;
+    /* Allow page breaks within sections to avoid large white gaps */
+    orphans: 3;
+    widows: 3;
+}
+
+.section-title {
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.1in;
+    padding: 0.05in 0.1in;
+    background: var(--accent-bg);
+    border-left: 4px solid var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    page-break-after: avoid;
+}
+
+.section-content {
+    font-size: 9.5pt;
+    line-height: 1.4;
+}
+
+/* About Section */
+#aboutContent p {
+    margin-bottom: 0.1in;
+    text-align: justify;
+    font-size: 9.5pt;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience-group {
+    margin-bottom: 0.18in;
+    /* Allow breaks within groups to prevent large gaps */
+    orphans: 2;
+    widows: 2;
+}
+
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.1in;
+    padding-bottom: 0.05in;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.company-name {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.2px;
+}
+
+.company-name a,
+.company-name {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.company-duration {
+    font-size: 9pt;
+    color: var(--text-light);
+    font-weight: 600;
+    background: var(--accent-bg);
+    padding: 0.02in 0.06in;
+    border-radius: 0.02in;
+}
+
+.experience-item {
+    margin-bottom: 0.12in;
+    margin-left: 0.12in;
+    padding-left: 0.08in;
+    border-left: 2px solid var(--border-color);
+    /* Only avoid breaks if item is small (less than ~1/3 page) */
+    orphans: 2;
+    widows: 2;
+}
+
+.experience-item:last-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.experience-header {
+    margin-bottom: 0.06in;
+}
+
+.experience-header h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.03in;
+    letter-spacing: 0.1px;
+}
+
+.experience-header .company {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 0.1in;
+}
+
+.experience-header .period {
+    font-size: 9pt;
+    color: var(--text-light);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+.location-text {
+    font-size: 8.5pt;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 0.06in;
+    display: inline-block;
+}
+
+.experience-content {
+    margin-top: 0.06in;
+}
+
+.experience-content p {
+    margin-bottom: 0.06in;
+    font-size: 9.5pt;
+    text-align: justify;
+}
+
+.experience-content ul {
+    margin-left: 0.25in;
+    margin-top: 0.06in;
+    margin-bottom: 0.06in;
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-content li {
+    margin-bottom: 0.04in;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 0.15in;
+}
+
+.experience-content li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.tech-stack {
+    margin-top: 0.06in;
+    padding-top: 0.06in;
+    border-top: 1px solid var(--border-color);
+    font-size: 8.5pt;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.tech-stack strong {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-style: normal;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 0.12in;
+    padding-left: 0.08in;
+    border-left: 2px solid var(--accent-bg);
+    /* Allow breaks in long project descriptions */
+    orphans: 2;
+    widows: 2;
+}
+
+.project-header {
+    margin-bottom: 0.06in;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.project-header h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.03in;
+    letter-spacing: 0.1px;
+}
+
+.project-period {
+    font-size: 9pt;
+    color: var(--text-light);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    background: var(--accent-bg);
+    padding: 0.02in 0.06in;
+    border-radius: 0.02in;
+}
+
+.project-content {
+    margin-top: 0.06in;
+}
+
+.project-content p {
+    margin-bottom: 0.06in;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.12in;
+}
+
+.skill-category {
+    /* Keep skill categories together as they're small */
+    page-break-inside: avoid;
+    padding: 0.06in;
+    background: var(--accent-bg);
+    border-radius: 0.03in;
+    border-left: 3px solid var(--primary-color);
+}
+
+.skill-category h3 {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.04in;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-size: 9pt;
+}
+
+.skill-category p {
+    font-size: 9pt;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 0.1in;
+    padding-left: 0.08in;
+    border-left: 2px solid var(--accent-bg);
+    /* Keep education items together as they're small */
+    page-break-inside: avoid;
+}
+
+.education-item h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.03in;
+    letter-spacing: 0.1px;
+}
+
+.education-item .school {
+    font-size: 10pt;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.03in;
+}
+
+.education-item .period {
+    font-size: 9pt;
+    color: var(--text-light);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Honors Section */
+.honor-item {
+    margin-bottom: 0.1in;
+    padding-left: 0.08in;
+    border-left: 2px solid var(--accent-bg);
+    /* Keep honor items together as they're small */
+    page-break-inside: avoid;
+}
+
+.honor-item h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.03in;
+    letter-spacing: 0.1px;
+}
+
+.honor-details {
+    font-size: 9pt;
+    color: var(--text-light);
+    margin-bottom: 0.03in;
+    font-weight: 500;
+}
+
+.honor-association {
+    font-size: 9pt;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.03in;
+}
+
+.honor-description {
+    font-size: 8.5pt;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 0.03in;
+    line-height: 1.4;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: letter;
+        margin: 0.35in;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        background: white !important;
+        font-size: 10pt;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    .cv-container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .cv-section {
+        margin-bottom: 0.12in;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    .section-title {
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Only keep small items together - allow breaks in larger items */
+    .experience-item,
+    .project-item {
+        orphans: 2;
+        widows: 2;
+        /* Only avoid break if item is very small */
+        page-break-inside: auto;
+    }
+    
+    /* Small items can stay together */
+    .education-item,
+    .honor-item,
+    .skill-category {
+        page-break-inside: avoid;
+        orphans: 2;
+        widows: 2;
+    }
+    
+    .experience-group {
+        orphans: 2;
+        widows: 2;
+        page-break-inside: auto;
+    }
+    
+    /* Prevent breaking within small content blocks */
+    .experience-header,
+    .project-header,
+    .company-header {
+        page-break-after: avoid;
+    }
+    
+    /* Allow breaks in long lists but keep at least 2 lines together */
+    .experience-content ul,
+    .project-content {
+        orphans: 2;
+        widows: 2;
+    }
+    
+    a {
+        color: var(--text-color) !important;
+        text-decoration: none;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+        color: var(--text-light);
+    }
+    
+    /* Ensure no orphaned content */
+    .section-content p:last-child,
+    .experience-content p:last-child,
+    .project-content p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Screen preview styles */
+@media screen {
+    body {
+        background: #f5f5f5;
+        padding: 20px;
+    }
+    
+    .cv-container {
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 0.4in;
+    }
+}
