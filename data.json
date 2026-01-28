@@ -56,8 +56,7 @@
         "Worked on search subsystem, including Solr indexing and complex query implementation for search results",
         "Refactored search subsystem code extensively, significantly improving performance and stability while reducing CPU and memory usage",
         "Implemented AI search POC in Python with fuzzy search capabilities using human-readable words for videos, enabling direct navigation to specific video positions, demonstrated at an exhibition",
-        "Worked directly with enterprise customers to understand requirements and deliver custom integrations: refactored and integrated MAM search subsystem for NISV (Netherlands Institute for Sound and Vision), developed MAM plugins for Real Madrid TV and Adobe Experience Manager (AEM) to integrate with Vizrt products",
-        "Developed customer-specific projects including media transfer plugins in Golang, integrating with Adobe Cloud, Endeavour, Real Madrid, and other clients",
+        "Worked directly with enterprise customers to understand requirements and deliver custom integrations: refactored and integrated MAM search subsystem for NISV (Netherlands Institute for Sound and Vision), developed MAM plugins for Real Madrid TV and Adobe Experience Manager (AEM), and developed customer-specific projects including media transfer plugins in Golang, integrating with Endeavour and other clients",
         "Maintained system test suite with Python"
       ],
       "technologies": "Golang, Perl, Python, C#, C, C++, Kubernetes, ArgoCD, REST API, Microservices, ActiveMQ, Postgres, DB2, Oracle, Solr, Memcache, RedHat, AWS, S3, Cloud Native"
