@@ -175,6 +175,25 @@ async function generatePDF() {
 
         console.log(`✅ PDF generated successfully: ${PDF_FILENAME}`);
 
+        // Copy PDF to Downloads folder
+        const downloadsPath = '/Users/aaron/Downloads/CV-PDF';
+        const downloadsFile = path.join(downloadsPath, PDF_FILENAME);
+        
+        try {
+            // Create directory if it doesn't exist
+            if (!fs.existsSync(downloadsPath)) {
+                fs.mkdirSync(downloadsPath, { recursive: true });
+                console.log(`Created directory: ${downloadsPath}`);
+            }
+            
+            // Copy the PDF file
+            fs.copyFileSync(PDF_FILENAME, downloadsFile);
+            console.log(`✅ PDF copied to: ${downloadsFile}`);
+        } catch (copyError) {
+            console.error(`⚠️  Warning: Failed to copy PDF to Downloads folder: ${copyError.message}`);
+            // Don't fail the whole process if copy fails
+        }
+
     } catch (error) {
         console.error('❌ Error generating PDF:', error.message);
         process.exit(1);
