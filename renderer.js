@@ -36,7 +36,6 @@ function renderCV() {
     renderSkills();
     renderEducation();
     renderHonors();
-    renderContact();
     
     // Trigger animations after content is rendered
     if (window.setupAnimations) {
@@ -46,16 +45,47 @@ function renderCV() {
 
 function renderProfile() {
     const profile = cvData.profile;
+    const contact = cvData.contact;
     if (!profile) return;
 
     // Update header
     const headerH1 = document.querySelector('header h1');
     const subtitle = document.querySelector('.subtitle');
-    const location = document.querySelector('.location');
+    const contactHeaderEl = document.getElementById('contactHeader');
     
     if (headerH1 && profile.name) headerH1.textContent = profile.name;
     if (subtitle && profile.title) subtitle.textContent = profile.title;
-    if (location && profile.location) location.textContent = profile.location;
+    
+    // Render contact info in header
+    if (contactHeaderEl && contact) {
+        let html = '';
+        if (contact.email) {
+            html += `<p><strong>Email:</strong> <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></p>`;
+        }
+        if (contact.phone) {
+            html += `<p><strong>Phone:</strong> ${escapeHtml(contact.phone)}</p>`;
+        }
+        if (contact.location) {
+            html += `<p><strong>Location:</strong> ${escapeHtml(contact.location)}</p>`;
+        }
+        if (contact.linkedin) {
+            html += `<p><strong>LinkedIn:</strong> <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">linkedin.com/in/aaron-yingcai-sun-6658b83</a></p>`;
+        }
+        if (contact.website) {
+            html += `<p><strong>Website:</strong> <a href="${escapeHtml(contact.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(contact.website.replace(/^https?:\/\//, ''))}</a></p>`;
+        }
+        contactHeaderEl.innerHTML = html;
+        
+        // Adjust image height to match text content height
+        setTimeout(() => {
+            const profileText = document.querySelector('.profile-text');
+            const profileImage = document.getElementById('profileImage');
+            if (profileText && profileImage) {
+                const textHeight = profileText.offsetHeight;
+                profileImage.style.height = `${textHeight}px`;
+            }
+        }, 50);
+    }
     
     // Update social links - only update if profile.social exists
     if (profile.social) {
@@ -395,24 +425,6 @@ function renderHonors() {
         html += `</div>`;
         return html;
     }).join('\n            ');
-}
-
-function renderContact() {
-    const contactSection = document.querySelector('#contact .contact-info');
-    if (!contactSection || !cvData.contact) return;
-    
-    const contact = cvData.contact;
-    let html = `
-                    <p><strong>Email:</strong> <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></p>
-                    <p><strong>Location:</strong> ${escapeHtml(contact.location)}</p>
-                    <p><strong>Phone:</strong> ${escapeHtml(contact.phone)}</p>
-                    <p><strong>LinkedIn:</strong> <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">linkedin.com/in/aaron-yingcai-sun-6658b83</a></p>`;
-    
-    if (contact.website) {
-        html += `<p><strong>Website:</strong> <a href="${escapeHtml(contact.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(contact.website)}</a></p>`;
-    }
-    
-    contactSection.innerHTML = html;
 }
 
 function escapeHtml(text) {

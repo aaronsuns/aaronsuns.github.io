@@ -115,7 +115,7 @@ Generate a professional PDF version of your CV automatically:
    npm run generate-pdf
    ```
 
-This will create `Aaron Yingcai Sun.pdf` in the root directory. The script uses Puppeteer to render the PDF-optimized version (`cv-pdf.html`) with proper print settings.
+This will create `Aaron Yingcai Sun.pdf` in the root directory. The script uses Puppeteer to render the PDF-optimized version (`cv.html`) with proper print settings.
 
 **Note:** The PDF file is excluded from git (see `.gitignore`). You can manually add it if you want to track it in version control.
 
@@ -129,7 +129,7 @@ To view the website locally:
    ```
    Then open:
    - Default CV: http://localhost:8000/index.html
-   - PDF version: http://localhost:8000/cv-pdf.html
+   - PDF version: http://localhost:8000/cv.html
    - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 2. **Simple HTTP server (Node.js):**
@@ -138,7 +138,7 @@ To view the website locally:
    ```
    Then open:
    - Default CV: http://localhost:8000/index.html
-   - PDF version: http://localhost:8000/cv-pdf.html
+   - PDF version: http://localhost:8000/cv.html
    - Alternative CV: http://localhost:8000/index.html?cv=alt
 
 3. **VS Code Live Server:**
@@ -151,7 +151,7 @@ To view the website locally:
 ```
 cv-website/
 ├── index.html         # Main HTML file (structure only, content from JSON)
-├── cv-pdf.html        # PDF-optimized HTML version
+├── cv.html            # PDF-optimized HTML version
 ├── data.json          # Default CV content (easy to edit!)
 ├── data-alt.json      # Alternative tailored CV content
 ├── renderer.js        # Renders content from JSON files

@@ -2,7 +2,7 @@
 
 /**
  * PDF Generator Script
- * Generates a PDF from cv-pdf.html using Puppeteer
+ * Generates a PDF from cv.html using Puppeteer
  */
 
 const puppeteer = require('puppeteer');
@@ -13,7 +13,7 @@ const path = require('path');
 // Use a different port to avoid conflicts
 const PORT = 8001;
 const PDF_FILENAME = 'Aaron Yingcai Sun.pdf';
-const HTML_FILE = 'cv-pdf.html';
+const HTML_FILE = 'cv.html';
 
 // Simple HTTP server to serve the HTML file
 function startServer() {
