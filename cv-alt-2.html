@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron YingCai Sun - Senior Software Engineer | QA & Test Automation - CV PDF Version">
+    <title>Aaron YingCai Sun - CV (QA & Test Automation)</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="cv-pdf.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header with photo and contact info -->
+        <header class="cv-header">
+            <div class="header-content">
+                <img src="profile.jpg" alt="Aaron YingCai Sun" class="profile-photo" id="profileImage">
+                <div class="header-info">
+                    <h1 class="name" id="name">Aaron YingCai Sun</h1>
+                    <p class="title" id="title">Senior Software Engineer at Klarna</p>
+                    <div class="contact-header" id="contactHeader">
+                        <!-- Contact info will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main CV Content -->
+        <main class="cv-main">
+            <section id="about" class="cv-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content" id="aboutContent">
+                    <!-- Content will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+
+            <section id="experience" class="cv-section">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-content" id="experienceContent">
+                    <!-- Experience items will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+
+            <section id="projects" class="cv-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-content" id="projectsContent">
+                    <!-- Project items will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+
+            <section id="skills" class="cv-section">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-content" id="skillsContent">
+                    <!-- Skills will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+
+            <section id="education" class="cv-section">
+                <h2 class="section-title">Education</h2>
+                <div class="section-content" id="educationContent">
+                    <!-- Education items will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+
+            <section id="honors" class="cv-section">
+                <h2 class="section-title">Honors & Awards</h2>
+                <div class="section-content" id="honorsContent">
+                    <!-- Honors items will be rendered from data-alt-2.json -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>window.CV_VERSION = 'alt2';</script>
+    <script src="renderer-pdf.js"></script>
+</body>
+</html>

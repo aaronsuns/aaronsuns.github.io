@@ -3,6 +3,7 @@ node_modules/
 
 # Generated PDF
 *.pdf
+pdf-alt2/
 
 # OS files
 .DS_Store

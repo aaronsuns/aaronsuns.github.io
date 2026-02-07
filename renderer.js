@@ -17,6 +17,8 @@ async function loadCVData() {
         let dataFile = 'data.json';
         if (cvVersion === 'alt') {
             dataFile = 'data-alt.json';
+        } else if (cvVersion === 'alt2') {
+            dataFile = 'data-alt-2.json';
         }
         
         const response = await fetch(dataFile);

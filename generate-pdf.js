@@ -12,8 +12,14 @@ const path = require('path');
 
 // Use a different port to avoid conflicts
 const PORT = 8001;
-const PDF_FILENAME = 'Aaron Yingcai Sun.pdf';
-const HTML_FILE = 'cv.html';
+
+// Optional first arg: default | alt | alt2
+const cvVersion = process.argv[2] || 'default';
+const PDF_OUTPUT_DIR = cvVersion === 'alt2' ? 'pdf-alt2' : null;  // alt2 writes to its own folder
+const PDF_BASENAME = cvVersion === 'alt2' ? 'Aaron-Yingcai-Sun.pdf' : cvVersion === 'alt' ? 'Aaron Yingcai Sun - Alt.pdf' : 'Aaron Yingcai Sun.pdf';
+const PDF_FILENAME = PDF_OUTPUT_DIR ? path.join(PDF_OUTPUT_DIR, PDF_BASENAME) : PDF_BASENAME;
+const HTML_FILE = cvVersion === 'alt2' ? 'cv-alt-2.html' : 'cv.html';
+const URL_QUERY = cvVersion === 'alt' ? '?cv=alt' : '';
 
 // Simple HTTP server to serve the HTML file
 function startServer() {
@@ -91,9 +97,9 @@ async function generatePDF() {
         console.log('Launching browser...');
         try {
             browser = await puppeteer.launch({
-                headless: true,
+                headless: 'new',
                 args: [
-                    '--no-sandbox', 
+                    '--no-sandbox',
                     '--disable-setuid-sandbox',
                     '--disable-dev-shm-usage',
                     '--disable-gpu'
@@ -101,25 +107,22 @@ async function generatePDF() {
             });
         } catch (error) {
             console.log('Trying alternative browser launch method...');
-            // Try with system Chrome if available
             const possiblePaths = [
                 '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
                 '/Applications/Chromium.app/Contents/MacOS/Chromium'
             ];
-            
             let executablePath = null;
-            for (const path of possiblePaths) {
-                if (fs.existsSync(path)) {
-                    executablePath = path;
+            for (const p of possiblePaths) {
+                if (fs.existsSync(p)) {
+                    executablePath = p;
                     break;
                 }
             }
-            
             browser = await puppeteer.launch({
-                headless: true,
+                headless: 'new',
                 executablePath: executablePath,
                 args: [
-                    '--no-sandbox', 
+                    '--no-sandbox',
                     '--disable-setuid-sandbox',
                     '--disable-dev-shm-usage'
                 ]
@@ -128,26 +131,29 @@ async function generatePDF() {
 
         const page = await browser.newPage();
 
-        // Navigate to the HTML file
-        const url = `http://localhost:${PORT}/${HTML_FILE}`;
-        console.log(`Loading page: ${url}`);
-        
+        // Navigate to the HTML file (use cv-alt-2.html for alt2, cv.html?cv=alt for alt)
+        const url = `http://localhost:${PORT}/${HTML_FILE}${URL_QUERY}`;
+        console.log(`Loading page: ${url} (version: ${cvVersion})`);
+
+        // Use 'load' first (reliable); networkidle0 often times out when page fetches JSON
+        let navOk = false;
         try {
-            await page.goto(url, {
-                waitUntil: 'networkidle0',
-                timeout: 60000
-            });
-        } catch (error) {
-            console.log('First load attempt failed, retrying with longer timeout...');
-            await page.goto(url, {
-                waitUntil: 'domcontentloaded',
-                timeout: 60000
-            });
+            await page.goto(url, { waitUntil: 'load', timeout: 30000 });
+            navOk = true;
+        } catch (e) {
+            console.log('Load wait failed, trying domcontentloaded...');
+        }
+        if (!navOk) {
+            try {
+                await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+            } catch (e2) {
+                throw new Error(`Navigation failed: ${e2.message}`);
+            }
         }
 
-        // Wait for content to render (JavaScript needs time to load data.json)
+        // Wait for content to render (JavaScript needs time to load data-alt-2.json)
         console.log('Waiting for content to render...');
-        await page.waitForTimeout(3000);
+        await new Promise(r => setTimeout(r, 3000));
         
         // Wait for specific elements to ensure content is loaded
         try {
@@ -155,6 +161,12 @@ async function generatePDF() {
             await page.waitForSelector('#aboutContent', { timeout: 10000 });
         } catch (error) {
             console.log('Warning: Some elements may not have loaded, proceeding anyway...');
+        }
+
+        // Ensure output directory exists (for alt2: pdf-alt2/)
+        if (PDF_OUTPUT_DIR && !fs.existsSync(PDF_OUTPUT_DIR)) {
+            fs.mkdirSync(PDF_OUTPUT_DIR, { recursive: true });
+            console.log(`Created output folder: ${PDF_OUTPUT_DIR}`);
         }
 
         // Generate PDF with print-optimized settings
@@ -180,10 +192,11 @@ async function generatePDF() {
         const downloadsFile = path.join(downloadsPath, PDF_FILENAME);
         
         try {
-            // Create directory if it doesn't exist
-            if (!fs.existsSync(downloadsPath)) {
-                fs.mkdirSync(downloadsPath, { recursive: true });
-                console.log(`Created directory: ${downloadsPath}`);
+            // Create directory (and any subdirs like pdf-alt2) if they don't exist
+            const downloadsDir = path.dirname(downloadsFile);
+            if (!fs.existsSync(downloadsDir)) {
+                fs.mkdirSync(downloadsDir, { recursive: true });
+                console.log(`Created directory: ${downloadsDir}`);
             }
             
             // Copy the PDF file

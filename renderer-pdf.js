@@ -6,13 +6,15 @@ let cvData = {};
 // Load and render CV data
 async function loadCVData() {
     try {
-        // Check for query parameter to load different CV versions
+        // Check for query parameter or page-level override to load different CV versions
         const urlParams = new URLSearchParams(window.location.search);
-        const cvVersion = urlParams.get('cv') || 'default';
+        const cvVersion = window.CV_VERSION || urlParams.get('cv') || 'default';
         
         let dataFile = 'data.json';
         if (cvVersion === 'alt') {
             dataFile = 'data-alt.json';
+        } else if (cvVersion === 'alt2') {
+            dataFile = 'data-alt-2.json';
         }
         
         console.log('Loading CV data from:', dataFile);

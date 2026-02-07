@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "name": "Aaron YingCai Sun",
+    "title": "Senior Software Engineer | QA & Test Automation",
+    "location": "Stockholm, Sweden",
+    "image": "profile.jpg",
+    "social": {
+      "github": "https://github.com/aaronsuns",
+      "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83",
+      "email": "mailto:aaronsuns@gmail.com"
+    }
+  },
+  "about": [
+    "Senior Software Engineer with 20+ years of experience, including extensive background in QA engineering, test strategy, and quality assurance for consumer and enterprise products. Experienced in both manual testing—including hardware and the software that runs on it—and building automated test frameworks and CI/CD pipelines that keep quality high across multiple platforms and partner integrations.",
+    "Expert in Java, JavaScript, and Python in professional settings, with working knowledge of SQL. Skilled in defining test strategies and quality metrics, driving automation efforts, and advising on tooling and methods. Comfortable using AI tools to help write and maintain automated tests and to improve test coverage and efficiency.",
+    "Proven track record advocating for quality within cross-functional teams, influencing engineers, product managers, and designers in quality best practices. Former QA team lead and release manager: designed and executed large-scale performance tests, high-availability and stability testing, and coordinated testing efforts to ensure delivery of quality features. Successfully managed test environments on real hardware and simulators, and worked directly with enterprise customers on-site to integrate and validate solutions.",
+    "Strong technical leader with experience mentoring engineers, leading system test teams, and making technical and risk trade-off decisions related to QA work. Passionate about the quality we bring to users and invested in evolving QA processes. Collaborative and tenacious mindset whilst remaining curious and flexible. Keen interest in AI-driven testing and automation to take quality efforts to the next level."
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
+      "company": "Klarna",
+      "companyUrl": "https://www.klarna.com/",
+      "period": "October 2024 - Present",
+      "location": "Stockholm, Sweden",
+      "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud provides a common, stable platform for Klarna services.",
+      "bullets": [
+        "Ensure final user experience meets quality standards for mission-critical financial services used by 150+ engineering teams",
+        "Advocate for quality and stability in centralized cloud deployment platform; monitor infrastructure metrics and troubleshoot issues",
+        "Built and maintained AWS automation platform with green/blue and canary promotion strategies; participated in on-call and go-to person rotation for 24/7 support",
+        "Migrated client code from TypeScript to Go; led migration of Jenkins jobs to AWS Code Pipeline for CI/CD and deployment automation"
+      ],
+      "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Telness Tech",
+      "companyUrl": "https://telnesstech.com/",
+      "period": "August 2024 - September 2024",
+      "location": "Stockholm, Sweden",
+      "description": "Golang developer at payment team. Integrated Telness's system with Stripe API for billing.",
+      "technologies": "Go, GraphQL, Event Sourcing, AWS"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Vizrt",
+      "companyUrl": "https://www.vizrt.com/",
+      "period": "December 2018 - July 2024",
+      "location": "Stockholm, Sweden",
+      "bullets": [
+        "Developed and maintained Media Asset Management system, a modular distributed system; worked on search subsystem with Solr and complex queries",
+        "Maintained system test suite with Python; used testing frameworks and automation to ensure quality and reliability across the product",
+        "Implemented AI search POC in Python with fuzzy search; collaborated with enterprise customers to deliver custom integrations and validate solutions",
+        "Refactored search subsystem for performance and stability; participated in modernization using Kubernetes and ArgoCD (GitOps)"
+      ],
+      "technologies": "Golang, Python, Java, C#, Kubernetes, ArgoCD, REST API, Microservices, Postgres, Solr, Python test automation"
+    },
+    {
+      "title": "QA & Release Manager",
+      "company": "Connode AB",
+      "companyUrl": "https://cyanconnode.com/",
+      "period": "August 2012 - December 2018",
+      "location": "Stockholm, Sweden",
+      "description": "System test, function test, and release management of an IoT product for smart metering. Narrowband IoT RF mesh network using IETF 6LoWPAN (IPv6)/RPL CoAP.",
+      "bullets": [
+        "Responsible for test planning, test execution, test automation, and CI setup and maintenance; advocated for quality within cross-functional and customer-facing projects",
+        "Defined test strategies and quality metrics; designed and executed large-scale performance tests and high-availability, characteristics, and stability testing",
+        "Set up and automated test clusters with load balancer in AWS; coordinated testing efforts to ensure delivery of quality features",
+        "Worked directly with enterprise customers on-site (e.g. Telefonica UK, Reliance) to integrate and test solution, ensuring successful deployment"
+      ],
+      "technologies": "Python, Perl, Java, CoAP, 6LoWPAN, C, RTOS, IoT, AWS, MongoDB, CI/CD, test automation"
+    },
+    {
+      "title": "System Tester",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "June 2011 - August 2012",
+      "location": "Stockholm, Sweden",
+      "description": "System test of RBS (Radio Base Station) platform—both hardware and the software that runs on it. Wrote and executed test cases with Erlang CT/OTP. System test automation. Performance, capacity, robustness, and reliability testing. Agile/Scrum.",
+      "technologies": "Erlang, OTP, CT, Perl, Linux Shell"
+    },
+    {
+      "title": "TCM & Test Automation Developer",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "May 2008 - May 2011",
+      "location": "Stockholm, Sweden",
+      "description": "Test Configuration Management (TCM) of Core IMS, CSCF (SIP server). Set up test environment for function test, both real hardware and simulator. Software version control and test configuration management. Function test automation (Perl, Linux shell). Developed test automation tools and scripts for system load test.",
+      "technologies": "Perl, Linux Shell, test automation, hardware and simulator environments"
+    },
+    {
+      "title": "I&V Engineer / System Test Leader / Function Tester / Software Engineer",
+      "company": "Ericsson",
+      "companyUrl": "https://www.ericsson.com/",
+      "period": "June 2003 - May 2008",
+      "location": "Stockholm, Sweden | Beijing, China | Shanghai, China",
+      "description": "Function test of Core IMS, CSCF (SIP server) and Media Resource Server MRF. Team leadership of IPWorks system test (6 members). Block designer/function tester of AXE core network for CDMA2000.",
+      "bullets": [
+        "Led system test team of 6; coordinated testing efforts and advocated for quality across R&D and integration",
+        "Experience in manual testing on real hardware and with simulators; explained QA methodology and tools to technical and non-technical stakeholders"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Connode IoT Solution — Test Strategy & Automation",
+      "period": "August 2012 - December 2018",
+      "description": [
+        "System test, function test, and release management of IoT product. Defined test strategies and quality metrics; designed and executed large-scale performance tests.",
+        "Set up and automated test clusters in AWS; conducted high-availability and stability testing. Worked on-site with enterprise customers to integrate and validate solution. Maintained CI and regression test scripts for server and node."
+      ],
+      "technologies": "Python, Perl, Java, CoAP, 6LoWPAN, AWS, MongoDB, test automation, CI/CD"
+    },
+    {
+      "title": "Vizrt MAM — System Test Suite & Quality",
+      "period": "December 2018 - July 2024",
+      "description": [
+        "Developed and maintained Media Asset Management system. Maintained system test suite with Python; used testing frameworks to ensure quality. Implemented AI search POC in Python. Collaborated with enterprise customers to deliver and validate custom integrations."
+      ],
+      "technologies": "Golang, Python, Java, Kubernetes, ArgoCD, Solr, Postgres, Python test automation"
+    },
+    {
+      "title": "RBS Platform System Test",
+      "period": "May 2011 - June 2012",
+      "description": [
+        "System test of RBS (Radio Base Station) platform—hardware and software. Erlang/OTP/CT for test automation. Integration and system tests for WCDMA/LTE, multi-standard RBS. Agile/Scrum."
+      ],
+      "technologies": "Erlang, OTP, CT, Perl, Linux Shell"
+    },
+    {
+      "title": "CSCF Test Environment & Test Automation",
+      "period": "May 2008 - May 2011",
+      "description": [
+        "Set up and maintained test environment for Core IMS, CSCF (SIP server). Real hardware and simulator. Perl and Linux shell for test automation and test environment tooling. Served 20+ developers/testers."
+      ],
+      "technologies": "Perl, Linux Shell, VMware, Virtualbox, test automation"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": "Java, JavaScript, Python, Go, TypeScript, C#, Perl, C/C++, Erlang"
+    },
+    {
+      "category": "QA & Testing",
+      "items": "Test strategy & quality metrics, manual & automated testing, testing frameworks, CI/CD for test automation, hardware & software testing, AI-assisted test authoring"
+    },
+    {
+      "category": "Databases",
+      "items": "SQL, PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr, MongoDB"
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": "AWS (ECS, Lambda, EC2, RDS, S3, SQS, Code Pipeline), Kubernetes, ArgoCD, Docker, Jenkins, GitLab"
+    },
+    {
+      "category": "AI/ML & Tools",
+      "items": "AI/ML, Natural Language Processing, fuzzy search, LLM integration, use of AI tools to write and maintain automated tests"
+    },
+    {
+      "category": "Other",
+      "items": "REST API, Microservices, Agile/Scrum, cross-functional collaboration, mentoring, tech lead"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science (BS), Computer Software Engineering",
+      "school": "Southeast University",
+      "period": "2000 - 2004"
+    }
+  ],
+  "honors": [
+    {
+      "title": "Excellent employee Award",
+      "issuer": "Dan Redin- Vice president and CTO, Ericsson China R&D institute",
+      "date": "Jan 2007",
+      "associatedWith": "Ericsson"
+    },
+    {
+      "title": "Runner-up of Great China university IT contest",
+      "issuer": "hong kong technical university",
+      "date": "Jun 2003",
+      "associatedWith": "Southeast University",
+      "description": "IT contest between 800 university in China, Hongkong, Macau, Taiwan."
+    }
+  ],
+  "contact": {
+    "email": "aaronsuns@gmail.com",
+    "location": "Vasagatan 15A, 17261, Sundbyberg, Sweden",
+    "phone": "+46734123402",
+    "linkedin": "https://www.linkedin.com/in/aaron-yingcai-sun-6658b83",
+    "website": "https://aaronsuns.github.io/"
+  }
+}
