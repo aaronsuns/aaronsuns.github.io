@@ -18,7 +18,7 @@ const cvVersion = process.argv[2] || 'default';
 const PDF_OUTPUT_DIR = cvVersion === 'alt2' ? 'pdf-alt2' : null;  // alt2 writes to its own folder
 const PDF_BASENAME = cvVersion === 'alt2' ? 'Aaron-Yingcai-Sun.pdf' : cvVersion === 'alt' ? 'Aaron Yingcai Sun - Alt.pdf' : 'Aaron Yingcai Sun.pdf';
 const PDF_FILENAME = PDF_OUTPUT_DIR ? path.join(PDF_OUTPUT_DIR, PDF_BASENAME) : PDF_BASENAME;
-const HTML_FILE = cvVersion === 'alt2' ? 'cv-alt-2.html' : 'cv.html';
+const HTML_FILE = cvVersion === 'alt2' ? 'cv2.html' : 'cv.html';
 const URL_QUERY = cvVersion === 'alt' ? '?cv=alt' : '';
 
 // Simple HTTP server to serve the HTML file
@@ -131,7 +131,7 @@ async function generatePDF() {
 
         const page = await browser.newPage();
 
-        // Navigate to the HTML file (use cv-alt-2.html for alt2, cv.html?cv=alt for alt)
+        // Navigate to the HTML file (use cv2.html for alt2, cv.html?cv=alt for alt)
         const url = `http://localhost:${PORT}/${HTML_FILE}${URL_QUERY}`;
         console.log(`Loading page: ${url} (version: ${cvVersion})`);
 
