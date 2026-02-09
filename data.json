@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Aaron YingCai Sun",
-    "title": "Senior Software Engineer at Klarna",
+    "title": "Senior Software Engineer | Cloud Platform Engineer",
     "location": "Stockholm, Sweden",
     "image": "profile.jpg",
     "social": {
@@ -11,7 +11,7 @@
     }
   },
   "about": [
-    "Senior Software Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I'm part of a team designing and operating bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams. We manage centralized AWS infrastructure supporting hundreds of microservices and thousands of ECS tasks across all environments.",
+    "Senior Software Engineer and Cloud Platform Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I design and operate bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams—managing centralized AWS infrastructure, hundreds of microservices, and thousands of ECS tasks across all environments.",
     "Expert in programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD with operator development experience), Docker, and infrastructure automation (Ansible, Terraform). Extensive experience with databases (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js.",
     "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based. Experienced in high-availability testing, server performance analysis, and supporting customer deployments. Strong customer-facing experience working directly with enterprise clients to understand requirements, design solutions, and deliver integrations, including on-site deployments and technical collaboration.",
     "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation, CI/CD pipeline setup (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows with green/blue and canary strategies.",
@@ -19,20 +19,19 @@
   ],
   "experience": [
     {
-      "title": "Senior Software Engineer | Code-to-Cloud Platform Team",
+      "title": "Senior Software Engineer | Cloud Platform Engineer",
       "company": "Klarna",
       "companyUrl": "https://www.klarna.com/",
       "period": "October 2024 - Present",
       "location": "Stockholm, Sweden",
-      "description": "Klarna Engineering Platform (KEP) Domain - Code-to-Cloud is part of Klarna Engineering Platform, providing a common, stable platform for Klarna services.",
+      "description": "Cloud Platform Engineer in Klarna Engineering Platform (KEP)—Code-to-Cloud. Own and evolve the shared cloud platform that provides a common, bank-grade deployment foundation for Klarna services used by 150+ engineering teams.",
       "bullets": [
-        "Managed centralized cloud deployment platform for most of Klarna's services, ensuring secure, stable, cost-efficient operations",
-        "Designed and maintained bank-grade applications with auto-scaling and high availability for production workloads",
-        "Built and maintained AWS automation platform enabling Klarna engineers to manage service deployments, scaling, networking, certificates, and secrets across dev, staging, performance, and production environments, including upgrade and deployment workflows with green/blue and canary promotion strategies",
-        "Migrated client code from TypeScript to Go to improve performance and maintainability",
-        "Led migration of Jenkins jobs for ECS sidecar upgrades and ECS daemon service update workflow to AWS Code Pipeline, modernizing CI/CD workflows and deployment automation",
-        "Monitored and maintained infrastructure metrics monitoring systems, troubleshooting issues and making incremental improvements",
-        "Participated in go-to person rotation and on-call activities, providing 24/7 support for critical infrastructure and ensuring high availability"
+        "Own and operate the centralized cloud deployment platform for most of Klarna's services—secure, stable, cost-efficient, and compliant for financial workloads",
+        "Design and maintain bank-grade cloud platform capabilities: auto-scaling, high availability, and production-grade operations for platform and customer services",
+        "Build and maintain the AWS-based cloud platform (automation, deployments, scaling, networking, certificates, secrets) across dev, staging, performance, and production, with green/blue and canary promotion workflows",
+        "Drive platform modernization: migrated platform tooling from TypeScript to Go and from Jenkins to AWS Code Pipeline for ECS sidecar and daemon service lifecycle, improving reliability and maintainability",
+        "Run and improve infrastructure observability and metrics; troubleshoot platform issues and iterate on monitoring and operational practices",
+        "Share ownership of platform reliability via go-to person rotation and on-call, providing 24/7 support for critical cloud infrastructure"
       ],
       "technologies": "TypeScript, Go, AWS ECS, AWS Step Functions, AWS Lambda, AWS Code Pipeline, Jenkins"
     },
