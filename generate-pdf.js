@@ -9,6 +9,7 @@ const puppeteer = require('puppeteer');
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 // Use a different port to avoid conflicts
 const PORT = 8001;
@@ -205,6 +206,15 @@ async function generatePDF() {
         } catch (copyError) {
             console.error(`⚠️  Warning: Failed to copy PDF to Downloads folder: ${copyError.message}`);
             // Don't fail the whole process if copy fails
+        }
+
+        // Copy PDF to home folder
+        const homeFile = path.join(os.homedir(), PDF_BASENAME);
+        try {
+            fs.copyFileSync(PDF_FILENAME, homeFile);
+            console.log(`✅ PDF copied to: ${homeFile}`);
+        } catch (copyError) {
+            console.error(`⚠️  Warning: Failed to copy PDF to home folder: ${copyError.message}`);
         }
 
     } catch (error) {
