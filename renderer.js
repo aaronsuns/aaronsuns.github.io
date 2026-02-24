@@ -77,16 +77,6 @@ function renderProfile() {
             html += `<p><strong>Website:</strong> <a href="${escapeHtml(contact.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(contact.website.replace(/^https?:\/\//, ''))}</a></p>`;
         }
         contactHeaderEl.innerHTML = html;
-        
-        // Adjust image height to match text content height
-        setTimeout(() => {
-            const profileText = document.querySelector('.profile-text');
-            const profileImage = document.getElementById('profileImage');
-            if (profileText && profileImage) {
-                const textHeight = profileText.offsetHeight;
-                profileImage.style.height = `${textHeight}px`;
-            }
-        }, 50);
     }
     
     // Update social links - only update if profile.social exists
