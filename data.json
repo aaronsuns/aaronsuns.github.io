@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Aaron YingCai Sun",
-    "title": "Senior Software Engineer | Cloud Platform Engineer at Klarna",
+    "title": "Senior Cloud Engineer | Full Stack Engineer at Tobii",
     "location": "Stockholm, Sweden",
     "image": "profile.jpg",
     "social": {
@@ -11,7 +11,7 @@
     }
   },
   "about": [
-    "Senior Software Engineer and Cloud Platform Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Klarna, I design and operate bank-grade cloud deployment platforms that power mission-critical financial services for over 150 engineering teams—managing centralized AWS infrastructure, hundreds of microservices, and thousands of ECS tasks across all environments.",
+    "Senior Software Engineer and Cloud Platform Engineer with 20+ years of experience building and scaling distributed systems, cloud platforms, and large-scale service-oriented architectures. At Tobii, I build and operate the serverless cloud backend for Mimir, the eye-tracking data platform for recording, collaboration, and analysis. Previously at Klarna, I designed and operated bank-grade cloud deployment platforms powering mission-critical financial services for 150+ engineering teams—managing centralized AWS infrastructure, hundreds of microservices, and thousands of ECS tasks.",
     "Expert in programming languages (Go, TypeScript, Python, C#, Perl) and cloud-native technologies including AWS (ECS, Lambda, Step Functions, EC2, RDS, VPC, Route53, S3, SQS, DynamoDB, ASG, CDK, CloudFormation), Kubernetes (OpenShift, ArgoCD with operator development experience), Docker, and infrastructure automation (Ansible, Terraform). Extensive experience with databases (PostgreSQL, MySQL, Oracle, DB2, DynamoDB, Solr), message queues (ActiveMQ, SQS), and full-stack development including Vue.js.",
     "Proven track record in system architecture design, performance optimization, capacity planning, and troubleshooting complex distributed systems. Successfully managed large-scale R&D and test server infrastructure, both on-premise and cloud-based. Experienced in high-availability testing, server performance analysis, and supporting customer deployments. Strong customer-facing experience working directly with enterprise clients to understand requirements, design solutions, and deliver integrations, including on-site deployments and technical collaboration.",
     "Strong technical leader with experience mentoring engineers, leading cross-functional teams, and driving technical initiatives. Former QA team lead with extensive background in large-scale test automation, CI/CD pipeline setup (Jenkins, GitLab, Git/Gerrit), and systematic testing of enterprise-grade systems. Experience managing infrastructure for development teams and enabling smooth deployment workflows with green/blue and canary strategies.",
@@ -19,10 +19,25 @@
   ],
   "experience": [
     {
+      "title": "Senior Cloud Engineer | Full Stack Engineer",
+      "company": "Tobii",
+      "companyUrl": "https://www.tobii.com/",
+      "period": "April 2026 - Present",
+      "location": "Stockholm, Sweden",
+      "description": "Cloud engineer on Mimir, Tobii's eye-tracking data platform (Discovery Hub, Glasses Explore) powering recording, collaboration, and analysis. Work across the serverless backend (Muninn) and TypeScript/React frontend (Huginn).",
+      "bullets": [
+        "Build and operate serverless microservices in Python/FastAPI on AWS Lambda behind API Gateway, with DynamoDB persistence and AWS CDK infrastructure as code",
+        "Develop and harden backend flows for recording upload, processing, and event handling across distributed services",
+        "Contribute frontend features and performance fixes to the React/TypeScript client used by internal teams and end users",
+        "Improve production reliability and CI/CD, driving developer workflow improvements across repositories"
+      ],
+      "technologies": "Python, FastAPI, TypeScript, React, AWS Lambda, API Gateway, DynamoDB, S3, AWS CDK, CI/CD"
+    },
+    {
       "title": "Senior Software Engineer | Cloud Platform Engineer",
       "company": "Klarna",
       "companyUrl": "https://www.klarna.com/",
-      "period": "October 2024 - Present",
+      "period": "October 2024 - April 2026",
       "location": "Stockholm, Sweden",
       "description": "Cloud Platform Engineer in Klarna Engineering Platform (KEP)—Code-to-Cloud. Own and evolve the shared cloud platform that provides a common, bank-grade deployment foundation for Klarna services used by 150+ engineering teams.",
       "bullets": [
